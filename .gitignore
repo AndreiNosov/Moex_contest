@@ -16,12 +16,4 @@ backend
 serwiceWorker
 frontend
 
-src/__tests__
-src.v0/
-
-
-!**/backend
-!**/serwiceWorker
-!**/frontend
-!src/app/frontend/pic
 
