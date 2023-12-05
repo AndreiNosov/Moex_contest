@@ -14,7 +14,7 @@ This repository is designed to provide a robust and efficient platform for trade
 - This section of the repository houses a collection of proven and innovative trading strategies. Each strategy is thoroughly documented, including its rationale, implementation details, and historical performance where applicable. Traders can explore, analyze, and potentially incorporate these strategies into their bot development process.
 
 ### 2. Bot Design
-- Here, you can find the design specifications and architecture for trading bots. This includes details about bot functionality, communication with exchange APIs, risk management, and performance monitoring. The design documentation is aimed at guiding developers in creating robust and efficient trading bots.
+- Here, you can find the design specifications and architecture for trading bots. This includes details about bot functionality, communication with exchange APIs, risk management, and performance monitoring. The design documentation is aimed at guiding developers in creating robust and efficient trading bots. [https://www.figma.com/file/7yxNlDTxdXGHYtUx4O1rd7/MOEX-%D1%85%D0%B0%D0%BA%D0%B0%D1%82%D0%BE%D0%BD?type=design&node-id=0-1&mode=design](https://clck.ru/36wCwq)
 
 ### 3. Backend
 - The backend component constitutes the core functionality of the trading bot platform. It includes services for accessing market data, executing trades, managing user accounts, and storing trading bot configurations. The backend is designed to be scalable, secure, and reliable, providing the necessary infrastructure for running trading bots in real-world trading environments.
