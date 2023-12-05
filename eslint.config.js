@@ -7,7 +7,7 @@ module.exports = {
 	},
 	"extends": [
 		"airbnb-base",
-		"standard-with-typescript"],
+	],
 	"overrides": [
 	],
 	"parserOptions": {
@@ -26,5 +26,6 @@ module.exports = {
 		],
 
 	},
-
+	"plugins": [
+	]
 }
