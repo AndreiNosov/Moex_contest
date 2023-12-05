@@ -1,0 +1,20 @@
+root = true
+
+[*]
+indent_style = tap
+indent_style = 2
+end_of_line = lf
+charset = itf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+curly_bracket_next_line = true
+
+
+[*.(js|ts|css|scss)]
+spaces_around_operators = true
+spaces_around_brackets=outside
+
+[*.min.*]
+indent_style = ignore
+trim_trailing_whitespace = false
+insert_final_newline = ignore
