@@ -5,7 +5,7 @@ import BothFC from './Bot.js'
 export default function SidebarFC() {
 
 	return (
-		<aside className="sidebar pt-5 pb-4 bg-white rounded-2xl">
+		<aside className="sidebar pt-5 pb-4 h-min bg-white rounded-2xl">
 			<div className="title text-2xl font-medium font-sans pl-4 text-black ">
 				<h1>Брокерские счета</h1>
 			</div>

@@ -34,6 +34,13 @@ module.exports = {
 					'postcss-loader',
 				],
 			},
+			{
+				test: /\.(png|jpe?g)$/i,
+				type: 'asset/resource',
+				generator: {
+					filename: 'images/[name][ext]',
+				},
+			},
 		],
 	},
 	plugins: [

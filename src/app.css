@@ -193,6 +193,11 @@ margin: 0 auto;
 
 /* Sidebar bot completed */
 
+aside,
+main>section,
+.analytics section {
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
 /* ------------------ Main start ------------------ */
 main {
 	width: 100%;
@@ -202,7 +207,7 @@ main {
 main>section {
 	width: 100%;
 	max-width: 1354px;
-	min-height: 410px;
+	min-height: 408px;
 }
 
 .total_money {
@@ -226,4 +231,63 @@ main>section {
 }
 
 /* Main completed */
+/* ------------------ Main analytics start ------------------ */
+.analys_menu li a {
+	font-weight: 400;
+	font-size: 1rem;
+}
+
+.analys_menu a:hover {
+	border-bottom: solid 2px #FF0508;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	color: #FF0508;
+}
+
+.analys_menu .menu {
+	padding-top: 18px;
+}
+
+.analys_graph {
+	position: relative
+}
+
+.analys_graph>span {
+	position: absolute;
+	color: #13161C;
+	font-size: 16px;
+	font-weight: 400;
+	display: inline-block;
+	top: 26px;
+	font-size: 12px;
+}
+
+.analys_graph>div:last-of-type {
+	justify-content: center;
+	padding-left: 15px;
+}
+
+.analys_graph li {
+	align-items: center;
+	border-radius: 8px;
+
+}
+
+.list_investment {
+	width: 100%;
+}
+
+.list_investment li img {
+	display: inline-block;
+	max-width: 22px;
+	min-height: 8px;
+	max-height: 8px;
+}
+
+.list_investment li span {
+	width: max-content;
+	padding-left: 10px;
+}
+
+/* Main analytics completed */
 }

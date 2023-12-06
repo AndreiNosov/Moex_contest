@@ -5,7 +5,7 @@ import AnalyticsFC from "./analys/Analitics.js";
 export default function MainFC() {
 	return (
 		<main className="pl-6">
-			<section>
+			<section className="rounded-2xl mb-6">
 				<StatisticsFC />
 			</section>
 			<section><AnalyticsFC /></section>
