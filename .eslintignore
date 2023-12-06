@@ -1,31 +1,9 @@
-**/webpack.*
 *.config.js
 .*
-./*.js
-**/webpack.*.js
 webpack.*.js
 
-**/parser
 **/dist
 
 node_modules
-**/frontend/node_modules
-**/backend/node_modules
-**/serwiceWorker/node_modules
-**/serwiceWorker/index.js
-
-**/src/index.js
-**/backend/package.json
-**/frontend/package.json
-
-
-src/__tests__
-coverage
-websocket-polyfill.js
-setupTests.js
-caches
-src.v0
-main.js
-*log.*
-
-
+**/
+*.jsx

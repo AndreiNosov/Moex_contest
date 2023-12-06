@@ -1,7 +1,9 @@
-modex.exports = {
-	content: ['./moex/**/*.{html, js, jsx}', './moex/*.{js,jsx}'],
-	thene: {
-		extend: {}
-	},
-	plugins: {}
+module.exports = {
+	content: [
+		'./src/**/*.{js, jsx}',
+		'./src/*.{js, jsx}'
+	],
+
+	plugins: [require('daisyui')],
 }
+/* */

@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html {
+	background-color: #F4F4F4 !important;
+}
+
+#root,
+.toolbar {
+	max-width: 1920px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+div,
+a {
+	box-sizing: border-box;
+}
+
+div,
+p,
+headers {
+	cursor: default;
+
+}
+
+a {
+	cursor: pointer;
+}
+
+@layer components {
+
+	/* ------------------ header start ------------------ */
+	.profile_preview span {
+		display: block;
+		min-height: 40px;
+		width: 40px;
+
+		background: no-repeat center url('./pic/avatar_.svg');
+	}
+
+	.profile_name {
+		min-width: 101px;
+		width: 100%;
+		max-width: 150px;
+	}
+
+	.avatar.placeholder>div {
+		justify-content: flex-start;
+		align-items: flex-start;
+
+	}
+
+	.vector span {
+		display: block;
+		min-height: 50px;
+		width: 30px;
+		background: no-repeat center url('./pic/vector.svg');
+		background-position-y: 14px;
+		background-position-x: 17px
+	}
+
+	/* header completed */
+	/* ------------------ sidebar start ------------------ */
+	sidebar>div {
+		width: 266px;
+
+
+	}
+
+	/* sidebar completed */
+}

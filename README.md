@@ -1,95 +1,70 @@
-[![workers-ne](http://github.com/Tryd0g0lik/workers-ne/actions/workflows/main.yml/badge.svg?branch=main)](http://github.com/Tryd0g0lik/workers-ne/actions/workflows/main.yml)
-[![Build status](http://ci.appveyor.com/api/projects/status/m7rwpuj547x2gkcr/branch/master?svg=true)](http://ci.appveyor.com/project/Tryd0g0lik/workers-ne/branch/main)
+# Getting Started with Create React App
 
-# Домашнее задание к занятию "12. WebWorkers, ServiceWorkers"
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Правила сдачи задания:
+## Available Scripts
 
-1. **Важно**: в рамках этого ДЗ можно использовать любой менеджер пакетов
-2. Всё должно собираться через Webpack (включая картинки и стили) и выкладываться на Github Pages через Appveyor
-3. В README.md должен быть размещён бейджик сборки и ссылка на Github Pages
-4. В качестве результата присылайте проверяющему ссылки на ваши GitHub-проекты
-5. Авто-тесты писать не требуется
-6. Серверная часть должна быть выложена на [Render](http://render.com/). Посмотрите [инструкцию](http://github.com/netology-code/ahj-homeworks/tree/video/docs/render#readme) или [документацию](http://render.com/docs/deploy-node-express-app), как развертывать серверную часть на Render.
+In the project directory, you can run:
 
+### `yarn start`
 
----
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### Loading Styling
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-#### Легенда
+### `yarn test`
 
-Сейчас модно показывать интерфейсы загрузки вроде следующего:
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-![](./pic/loading.png)
+### `yarn build`
 
-#### Описание
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Реализуйте подобный интерфейс, закешировав статические ресурсы и показывая данный внешний вид до момента загрузки данных.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-Обратите внимание, даже если у пользователя нет подключения, страница всё равно должна отображаться, но в режиме "загрузки" и после неудачной попытки соединения переходить в режим:
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-![](./pic/loading-2.png)
+### `yarn eject`
 
-Для эмуляции задержки можете самостоятельно написать middleware для koa, или посмотреть на существующие вроде [koa-slow](http://github.com/bahmutov/koa-slow)
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-Напоминаем, что для кэширования вы можете воспользоваться плагином Workbox.
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
----
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-### Hasher* (задача со звёздочкой)
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-Важно: эта задача не является обязательной. Её (не)выполнение не влияет на получение зачёта по ДЗ.
+## Learn More
 
-#### Легенда
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-Периодически необходимо проверять контрольные суммы различных файлов, чтобы удостовериться, что при передаче с этими файлами не произошло ничего плохого. Конечно, для этого уже есть готовые инструменты, но всё равно пользователи пользуются какими-то онлайн-сервисами, загружая туда конфиденциальные файлы.
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-Поэтому ваш руководитель решил, что можно это сделать и на корпоративном портале (чтобы ничего никуда не загружалось) через браузер с помощью специальной библиотеки [crypto-js](http://github.com/brix/crypto-js/), что вам и предстоит сделать.
+### Code Splitting
 
-#### Описание
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-Вам необходимо скачать и установить библиотеку crypto-js, делается это стандартным способом через npm или yarn.
+### Analyzing the Bundle Size
 
-Внешний интерфейс виджета должен выглядеть следующим обазом:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-![](./pic/hasher.png)
+### Making a Progressive Web App
 
-Хэш автоматически пересчитывается при выборе другого алгоритма хеширования (выпадающее меню) или выбора другого файла.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-Файлы могут загружаться как выбором (при клике на область должен открываться стандартный интерфейс выбора файла в браузере), так и DnD.
+### Advanced Configuration
 
-Поскольку ваш виджет в дальнейшем могут захотеть использовать в составе других интерфейсов, крайне нежелательно, чтобы загрузка файла и расчёт контрольной суммы приводили к зависанию интерфейса.  Поэтому их необходимо вынести в Web Worker.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-Функции crypto-js требуют объекты специального внутреннего формата `WordArray`. Получить из `ArrayBuffer` его и рассчитать хэш можно с помощью следующего кода:
-```javascript
-const wordArray = crypto.lib.WordArray.create(<array buffer here>);
-const hash = crypto.MD5(wordArray).toString(crypto.enc.Hex);
-```
+### Deployment
 
-`hash` - и есть полученная контрольная сумма, рассчитанная по алгоритму MD5. Вам, естественно, нужно сделать поддержку не только MD5, а ещё и:
-* crypto-js/sha1
-* crypto-js/sha256
-* crypto-js/sha512
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-Продумайте, как вы будете проверять, что ваше приложение считает хэш правильно.
+### `yarn build` fails to minify
 
----
-
-### Buggy Service (задача со звёздочкой)
-
-Важно: эта задача является необязательной для реализации
-
-#### Легенда
-
-Вам выпала нелёгкая задача - интегрироваться с "глючным" сторонним сервисом новостей. Сервер периодически "отваливается", отвечая кодом 500. Поскольку вы уже знакомы с Service Workers, вы решили кэшировать ответы сервера, когда они всё-таки появляются и отдавать закешированные, если сервер отвечает ошибкой.
-
-#### Описание
-
-Вам необходимо реализовать сервер, эмулирующий эту ситуацию (достаточно выставлять правильный код в koa, как мы это делали в лекции по HTTP, либо можете дополнительно ознакомиться с [обработкой ошибок в koa](http://github.com/koajs/koa/wiki/Error-Handling)).
-
-Общий вид интерфейса:
-
-![](./pic/buggy.png)
-
-Можете использовать сервер из предыдущего задания, добавив туда генерацию ошибки случайным образом.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
