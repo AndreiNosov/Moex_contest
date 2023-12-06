@@ -1,9 +1,11 @@
 import React from "react";
-import BrokerFC from "./Broker";
+import BrokerFC from "./Broker.js";
+import BankFC from './Bank.js';
+import BothFC from './Bot.js'
+export default function SidebarFC() {
 
-export default function SidebarFC(prop) {
 	return (
-		<aside className="sidebar pt-5 bg-white rounded-2xl">
+		<aside className="sidebar pt-5 pb-4 bg-white rounded-2xl">
 			<div className="title text-2xl font-medium font-sans pl-4 text-black ">
 				<h1>Брокерские счета</h1>
 			</div>
@@ -14,12 +16,14 @@ export default function SidebarFC(prop) {
 				<div className=" maney counter_money w-[55px] font-sans">
 					<span className="text-[#EC595B] font-normal pl-1.5 text-sm">1890</span>
 				</div>
-				<div className="percerntiles ml-1 pl-1.5 w-[48px] flex pr-[1.75rem] font-sans" >
+				<div className="percerntiles ml-1 pl-1.5 w-[48px] flex pr-[1.75rem] font-sans">
 					<span className="counter_money__percerntiles  text-[#EC595B] text-sm">890</span>
 
 				</div>
 			</div>
 			<BrokerFC />
+			<BankFC />
+			<BothFC />
 		</aside>
 	)
 }

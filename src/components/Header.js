@@ -18,7 +18,7 @@ export default function HeaderFC(props) {
 				<div className='grow '></div>
 				<div className='profile flex-none flex flex-row basis-[218px] avatar placeholder'>
 					<div className="profile_preview flex-none w-[40px] h-[40px] bg-neutral text-neutral-content rounded-full w-24">
-						<span class="text-3xl flex-initial"></span>
+						<span className="text-3xl flex-initial"></span>
 					</div>
 					<div className="profile_name pt-1 text-left ml-[16px]">
 						Иванов Иван

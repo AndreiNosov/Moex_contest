@@ -96,7 +96,8 @@ margin: 0 auto;
 .money span:after,
 .counter_money span:after,
 .counter_money__today span:after,
-.case_counter::after {
+.case_counter::after,
+.total_money span::after {
 	content: '₽';
 	display: inline-block;
 	position: absolute;
@@ -136,7 +137,7 @@ margin: 0 auto;
 	right: 0;
 }
 /* sidebar completed */
-/* ------------------ broker start ------------------ */
+/* ------------------ Sidebar broker start ------------------ */
 .broker>div {
 	min-height: 92px;
 }
@@ -148,8 +149,81 @@ margin: 0 auto;
 	width: 56px;
 
 }
+.case_preview.bot {
+	background: no-repeat center url('./pic/bot.png');
+}
 
+.broker>div:last-of-type {
+	padding-bottom: 20px;
+	;
+}
 
+.broker {
+	border-bottom: solid 1px #e5e7eb;
+}
 
-/* broker completed */
+/* Sidebar broker completed */
+/* ------------------ Sidebar bank start ------------------ */
+
+.bank .bank_preview {
+	background: no-repeat center url('./pic/bottom_plus.svg');
+	background-position-y: 6px;
+}
+
+/* Sidebar bank completed */
+/* ------------------ Sidebar bot start ------------------ */
+.bot_preview {
+	background: no-repeat center url('./pic/large_bot.png');
+	width: 159px;
+	min-height: 167px;
+	margin: 0 auto;
+}
+
+.bot h5,
+.bot button {
+	display: block;
+	width: 202px;
+
+	margin: 0 auto;
+}
+
+.bot h5 {
+	margin-bottom: 15px;
+}
+
+/* Sidebar bot completed */
+
+/* ------------------ Main start ------------------ */
+main {
+	width: 100%;
+	max-width: 1378px;
+}
+
+main>section {
+	width: 100%;
+	max-width: 1354px;
+	min-height: 410px;
+}
+
+.total_money {
+	border-bottom: solid 1px #F4F4F4;
+}
+
+.total_money span {
+	display: inline-block;
+	position: relative;
+}
+
+.charf {
+	width: inherit;
+	min-height: 257px;
+}
+
+.charf {
+	background: no-repeat url('./components/main/img/statistics.png');
+	background-position-x: 16px;
+	background-position-y: center;
+}
+
+/* Main completed */
 }
