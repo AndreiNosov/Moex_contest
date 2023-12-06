@@ -1,0 +1,293 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html {
+background-color: #F4F4F4 !important;
+}
+
+#root {
+	max-width: 1920px;
+	width: 100%;
+	margin: 0 auto;
+}
+#root,
+.toolbar,
+.content {
+	margin: 0 auto;
+}
+
+div,
+a {
+box-sizing: border-box;
+}
+
+div,
+p,
+headers {
+cursor: default;
+
+}
+
+a {
+cursor: pointer;
+}
+@layer components {
+.toolbar,
+	.content {
+
+width: 100%;
+	max-width: 1660px;
+}
+/* ------------------ header start ------------------ */
+
+.profile_preview span {
+	display: block;
+	min-height: 40px;
+	width: 40px;
+
+background: no-repeat center url('./pic/avatar_.svg');
+}
+
+.profile_name {
+	min-width: 101px;
+	width: 100%;
+	max-width: 150px;
+}
+
+.avatar.placeholder>div {
+	justify-content: flex-start;
+	align-items: flex-start;
+
+}
+
+.vector span {
+	display: block;
+	min-height: 50px;
+	width: 30px;
+	background: no-repeat center url('./pic/vector.svg');
+	background-position-y: 14px;
+	background-position-x: 17px
+}
+
+/* header completed */
+
+/* ------------------ sidebar start ------------------ */
+.sidebar {
+	width: 282px
+}
+
+.sidebar>div,
+.sidebar>section {
+	width: 266px;
+margin: 0 auto;
+}
+
+.money span,
+.counter_money span,
+.maney,
+.percerntiles,
+.case_counter {
+	display: block;
+	position: relative;
+}
+
+.money span:after,
+.counter_money span:after,
+.counter_money__today span:after,
+.case_counter::after,
+.total_money span::after {
+	content: '₽';
+	display: inline-block;
+	position: absolute;
+	right: 0;
+}
+
+.counter_money>span::before {
+	content: '-';
+	display: inline-block;
+	position: absolute;
+	left: 0;
+}
+
+.case .counter_money>span::before {
+	content: '+';
+	display: inline-block;
+	position: absolute;
+	left: 0;
+}
+
+.counter_money__today span:after {}
+
+.counter_money__percerntiles::after,
+.counter_money__percerntiles::before {
+	display: inline-block;
+	position: absolute;
+	right: 0;
+}
+
+.counter_money__percerntiles::after {
+	content: "(";
+	left: 0;
+}
+
+.counter_money__percerntiles::before {
+	content: "%)";
+	right: 0;
+}
+/* sidebar completed */
+/* ------------------ Sidebar broker start ------------------ */
+.broker>div {
+	min-height: 92px;
+}
+
+/* bag */
+.case_preview {
+	background: no-repeat center url('./pic/bag.svg');
+	background-position-x: 0;
+	width: 56px;
+
+}
+.case_preview.bot {
+	background: no-repeat center url('./pic/bot.png');
+}
+
+.broker>div:last-of-type {
+	padding-bottom: 20px;
+	;
+}
+
+.broker {
+	border-bottom: solid 1px #e5e7eb;
+}
+
+/* Sidebar broker completed */
+/* ------------------ Sidebar bank start ------------------ */
+
+.bank .bank_preview {
+	background: no-repeat center url('./pic/bottom_plus.svg');
+	background-position-y: 6px;
+}
+
+/* Sidebar bank completed */
+/* ------------------ Sidebar bot start ------------------ */
+.bot_preview {
+	background: no-repeat center url('./pic/large_bot.png');
+	width: 159px;
+	min-height: 167px;
+	margin: 0 auto;
+}
+
+.bot h5,
+.bot button {
+	display: block;
+	width: 202px;
+
+	margin: 0 auto;
+}
+
+.bot h5 {
+	margin-bottom: 15px;
+}
+
+/* Sidebar bot completed */
+
+aside,
+main>section,
+.analytics section {
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+/* ------------------ Main start ------------------ */
+main {
+	width: 100%;
+	max-width: 1378px;
+}
+
+main>section {
+	width: 100%;
+	max-width: 1354px;
+	min-height: 408px;
+}
+
+.total_money {
+	border-bottom: solid 1px #F4F4F4;
+}
+
+.total_money span {
+	display: inline-block;
+	position: relative;
+}
+
+.charf {
+	width: inherit;
+	min-height: 257px;
+}
+
+.charf {
+	background: no-repeat url('./components/main/img/statistics.png');
+	background-position-x: 16px;
+	background-position-y: center;
+}
+
+/* Main completed */
+/* ------------------ Main analytics start ------------------ */
+.analys_menu li a {
+	font-weight: 400;
+	font-size: 1rem;
+}
+
+.analys_menu a:hover {
+	border-bottom: solid 2px #FF0508;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	color: #FF0508;
+}
+
+.analys_menu .menu {
+	padding-top: 18px;
+}
+
+.analys_graph {
+	position: relative
+}
+
+.analys_graph>span {
+	position: absolute;
+	color: #13161C;
+	font-size: 16px;
+	font-weight: 400;
+	display: inline-block;
+	top: 26px;
+	font-size: 12px;
+}
+
+.analys_graph>div:last-of-type {
+	justify-content: center;
+	padding-left: 15px;
+}
+
+.analys_graph li {
+	align-items: center;
+	border-radius: 8px;
+
+}
+
+.list_investment {
+	width: 100%;
+}
+
+.list_investment li img {
+	display: inline-block;
+	max-width: 22px;
+	min-height: 8px;
+	max-height: 8px;
+}
+
+.list_investment li span {
+	width: max-content;
+	padding-left: 10px;
+}
+
+/* Main analytics completed */
+}
