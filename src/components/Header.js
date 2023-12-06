@@ -2,8 +2,8 @@ import React from "react";
 
 export default function HeaderFC(props) {
 	return (
-		<header className="flex flex-row pt-[30px] bg-slate-50 h-[80px] basis-full">
-			<div className="toolbar flex flex-row basis-[1660px]">
+		<header className="flex flex-row pt-[30px] bg-slate-50 h-[88px] basis-full">
+			<div className="toolbar flex flex-row">
 				<div className='nav flex-none flex flex-row basis-[933px]'>
 					<nav className="flex basis-full">
 						<ul className="flex basis-full flex-row flex-nowrap">
