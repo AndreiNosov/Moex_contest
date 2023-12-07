@@ -13,8 +13,8 @@ export default function SidebarFC() {
 				<span className="  w-[150px]">389089,34 </span>
 			</div>
 			<div className="counter flex pt-1.5 pb-4 text-2xl pl-4 border-b-[1px] ">
-				<div className=" maney counter_money w-[55px] font-sans">
-					<span className="text-[#EC595B] font-normal pl-1.5 text-sm">1890</span>
+				<div className=" maney counter_money min-w-fit  font-sans">
+					<span className="text-[#EC595B] font-normal pr-3 pl-1.5 text-sm">1890</span>
 				</div>
 				<div className="percerntiles ml-1 pl-1.5 w-[48px] flex pr-[1.75rem] font-sans">
 					<span className="counter_money__percerntiles  text-[#EC595B] text-sm">890</span>
