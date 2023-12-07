@@ -24,6 +24,11 @@ export default function MainFC() {
 
 				- Страница "Последние события"
 				- "<div id="root" class="last_events_page">"
+
+		
+				- Окно "Модальное"
+				- Смю "App.js"
+				- Расскоментировать "	<ModelFC />" строку
 			
 			
 			*/}
@@ -56,7 +61,7 @@ export default function MainFC() {
 
 
 
-			{/*Последние события*/}
+			{/* Окно "Модальное"*/}
 			<section className="events rounded-2xl bg-white rounded-2xl min-h-[476px] grow pt-6">
 
 				<LastEventsFC />
