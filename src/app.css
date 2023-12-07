@@ -168,7 +168,7 @@ margin: 0 auto;
 /* bag */
 .case_preview {
 	background: no-repeat center url('./pic/bag.svg');
-	background-position-x: 0;
+	
 	width: 56px;
 
 }
@@ -549,17 +549,20 @@ section.analytics {}
 
 /*Open a new type bank was completed */
 /* ------------------ The page last investment  ------------------ */
-.last_invest_page>section {
+.last_invest_page>section,
+.last_events_page>section {
 	overflow: initial;
 	height: auto;
 }
 
-.last_invest_page h6 {
+.last_invest_page h6,
+.last_events_page h6 {
 
 	font-size: 34px;
 }
 
-.last_invest_page .last_invest {
+.last_invest_page .last_invest,
+.last_events_page .last_events {
 	padding: 2.8rem 0 40px 24px;
 	margin-left: 0;
 }
@@ -574,7 +577,8 @@ section.analytics {}
 	padding-right: 100px;
 }
 
-.last_invest_page table tr:nth-child(n+1) {
+.last_invest_page table tr:nth-child(n+1),
+.last_events_page table tr:nth-child(n+1) {
 	border-bottom: 1px solid #F4F4F4;
 
 
@@ -613,4 +617,37 @@ footer {
 }
 
 /* It's a Footer*/
+/* ------------------ The page last events ------------------ */
+.last_events_page .content {
+	padding-bottom: 140px;
+}
+
+.last_events_page .events {
+	padding-top: 2.9rem;
+}
+
+.last_events_page .events {
+	padding-bottom: 40px;
+}
+
+.last_events_page .last_events {
+	padding: 1.6rem 0 0 43px;
+}
+
+.table_last_invest th:nth-child(1),
+.table_last_invest tr:nth-child(n+2) td:nth-child(1) {
+	width: 170px;
+}
+
+.last_events_page tr th:nth-child(5),
+.last_events_page tr:nth-child(n+2) td:last-of-type {
+	text-align: right;
+	max-width: 190px;
+}
+
+.last_events_page tr:nth-child(n+2) td:last-of-type {
+	max-width: 122px;
+}
+
+/* The page last events was completed */
 }

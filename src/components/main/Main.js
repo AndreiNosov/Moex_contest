@@ -7,18 +7,23 @@ import LastInvestFC from './last_invest/Investment.js';
 
 export default function MainFC() {
 	return (
-		<main className="pl-6 last_invest_page">
+		<main className="pl-6 last_events_page">
 			{ /* Main page  главная страница 
 			Чтоб видеть "Выберите тип счета" 
-				- вставьте класс "<main className="pl-6 openk_bank">"
+				- вставьте класс "<div id="root" className="openk_bank">"
 				- ниже раскоментировать "Выберите тип счета" 
 
 
 				- Страница "Последние инвестиции" 
-				- "<main className="pl-6 last_invest">"
+				- "<div id="root" className=" last_invest">"
+
+
+				- Страница "Последние события"
+				- "<div id="root" className="last_events_page">"
 			
 			
 			*/}
+			{ /* " Main page  главная страница "  */}
 			{/* <section className=" rounded-2xl mb-6">
 				<StatisticsFC />
 			</section>
@@ -38,12 +43,20 @@ export default function MainFC() {
 
 
 			{ /* "Последние инвестиции"  */}
-			<section className=" rounded-2xl mb-6">
+			{/* <section className=" rounded-2xl mb-6">
 				<div className=" flex grow">
 
 					<LastInvestFC />
 				</div>
-			</section>
+			</section> */}
+
+
+
+			{/*Последние события*/}
+			<section className="events rounded-2xl bg-white rounded-2xl min-h-[476px] grow pt-6">
+
+				<LastEventsFC />
+			</section> 
 
 		</main>
 	)
