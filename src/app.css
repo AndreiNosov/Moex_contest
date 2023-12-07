@@ -104,20 +104,22 @@ margin: 0 auto;
 	right: 0;
 }
 
-.counter_money>span::before {
+/* .counter_money>span::before {
 	content: '-';
 	display: inline-block;
 	position: absolute;
 	left: 0;
 }
 
-.case .counter_money>span::before {
+*/
+/* .case .counter_money>span::before {
 	content: '+';
 	display: inline-block;
 	position: absolute;
 	left: 0;
 }
 
+*/
 .counter_money__today span:after {}
 
 .counter_money__percerntiles::after,
@@ -198,6 +200,9 @@ main>section,
 .analytics section {
 	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
+main section.analytics {
+	box-shadow: none;
+}
 /* ------------------ Main start ------------------ */
 main {
 	width: 100%;
@@ -232,12 +237,16 @@ main>section {
 
 /* Main completed */
 /* ------------------ Main analytics start ------------------ */
-.analys_menu li a {
+section.analytics {}
+
+.analys_menu li span {
 	font-weight: 400;
 	font-size: 1rem;
+	min-height: 37px;
+		max-height: 37px;
 }
 
-.analys_menu a:hover {
+.analys_menu span:hover {
 	border-bottom: solid 2px #FF0508;
 	border-bottom-right-radius: 0;
 	border-bottom-left-radius: 0;
@@ -289,5 +298,160 @@ main>section {
 	padding-left: 10px;
 }
 
-/* Main analytics completed */
+/* table a last invest*/
+.table_last_invest {
+	padding-right: 47px;
+}
+
+.table_last_invest th {
+	padding-top: 24px;
+}
+
+.table_last_invest th:nth-child(1) {
+	padding: 24px 0 0 14px;
+	text-align: left;
+
+}
+
+.table_last_invest th:nth-child(1),
+.table_last_invest tr:nth-child(n+2) td:nth-child(1) {
+	min-width: 138px;
+}
+
+.table_last_invest tr:nth-child(n+2) td:nth-child(1) {
+	padding-left: 10px;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	display: flex;
+
+
+}
+
+
+.table_last_invest tr:nth-child(n+2) td:nth-child(1) div {
+	display: flex;
+	flex-direction: column;
+	padding-left: 12px;
+}
+
+.table_last_invest tr:nth-child(n+2) td:nth-child(2) {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around
+}
+
+.events tr:nth-child(n+2) td:nth-child(2) {
+	flex-direction: row;
+}
+
+.table_last_invest tr:nth-child(n+2) td {
+	padding-top: 24px;
+
+}
+
+.table_last_invest tr:nth-child(n+2) td:nth-child(n+2) {
+	align-items: flex-start;
+	justify-content: flex-start
+}
+
+
+.table_last_invest .counter_money {
+	display: flex;
+	text-align: center;
+
+}
+
+.table_last_invest tr {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.table_last_invest .counter_money span {
+	display: inline-block;
+	position: relative;
+	width: min-content;
+
+	padding-right: 0.75rem;
+	margin: 0 auto;
+}
+
+.table_last_invest .counter_moneyfont-sans,
+.table_last_invest .percerntile {
+	position: relative;
+}
+
+.table_last_invest .counter_money__percerntiles {
+	padding: 0 1.15rem 0 0.35rem;
+}
+
+/* Main a last events */
+.events {
+	margin: 0;
+}
+
+.last_events tr {
+	justify-content: flex-start;
+}
+
+.last_events tr td,
+.last_events tr th {
+	gap: 10px;
+}
+
+.last_events tr th:nth-child(3) {
+	width: 100%;
+	max-width: 56%;
+}
+
+.last_events tr th:nth-child(5) {
+	width: 100%;
+	max-width: 18%;
+}
+
+.last_events tr .last_events tr:nth-child(1) {
+	justify-content: flex-start;
+	gap: 90px
+}
+
+
+.last_events tr:nth-child(n+2) td:nth-child(2) {
+	justify-items: flex-start;
+
+	width: 100%;
+	max-width: 570px;
+
+}
+
+.last_events tr:nth-child(n+2) td:nth-child(2) div {
+	display: flex;
+	flex-direction: column;
+}
+
+.last_events tr:nth-child(n+2) td:nth-child(2) div span:first-of-type {
+	color: #13161C;
+}
+
+.last_events tr:nth-child(n+2) td:nth-child(2) div span:last-of-type {
+	color: #727272;
+}
+
+.last_events tr:nth-child(n+2) td:nth-child(3) {
+	width: 16%;
+}
+
+.last_events tr:nth-child(n+2) td:nth-child(4) {
+	text-align: end;
+	width: 100%;
+	max-width: 9%;
+}
+
+.last_events tr:nth-child(n+2) td:last-of-type {
+	margin-left: 5%;
+	width: 100%;
+	max-width: 7%;
+	text-align: end;
+}
+
+/* It's a Main completed */
 }
