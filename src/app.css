@@ -7,6 +7,7 @@ html {
 background-color: #F4F4F4 !important;
 }
 
+
 #root {
 	max-width: 1920px;
 	width: 100%;
@@ -17,7 +18,10 @@ background-color: #F4F4F4 !important;
 .content {
 	margin: 0 auto;
 }
-
+.content {
+	position: relative;
+	padding-bottom: 115px;
+}
 div,
 a {
 box-sizing: border-box;
@@ -35,7 +39,8 @@ cursor: pointer;
 }
 @layer components {
 .toolbar,
-	.content {
+	.content,
+		footer {
 
 width: 100%;
 	max-width: 1660px;
@@ -71,6 +76,22 @@ background: no-repeat center url('./pic/avatar_.svg');
 	background-position-x: 17px
 }
 
+nav li a.link {
+	text-decoration: none;
+}
+
+nav li:hover {
+	border-bottom: 2px solid #FF0508;
+}
+
+nav li:hover a:hover {
+	color: #FF0508;
+}
+
+nav:hover a.link {
+
+	text-decoration: none;
+}
 /* header completed */
 
 /* ------------------ sidebar start ------------------ */
@@ -212,7 +233,12 @@ main {
 main>section {
 	width: 100%;
 	max-width: 1354px;
-	min-height: 408px;
+	height: 408px;
+		overflow: hidden;
+	}
+	
+	main>section:nth-child(2) {
+		height: 476px;
 }
 
 .total_money {
@@ -521,5 +547,70 @@ section.analytics {}
 }
 
 
-/*Open a new type bank is completed */
+/*Open a new type bank was completed */
+/* ------------------ The page last investment  ------------------ */
+.last_invest_page>section {
+	overflow: initial;
+	height: auto;
+}
+
+.last_invest_page h6 {
+
+	font-size: 34px;
+}
+
+.last_invest_page .last_invest {
+	padding: 2.8rem 0 40px 24px;
+	margin-left: 0;
+}
+
+.last_invest_page .name {
+	padding-left: 14px;
+}
+
+.last_invest_page .invest_table {
+	padding: 27px;
+	padding-left: 1.2rem;
+	padding-right: 100px;
+}
+
+.last_invest_page table tr:nth-child(n+1) {
+	border-bottom: 1px solid #F4F4F4;
+
+
+}
+
+.last_invest_page .table_last_invest tr:nth-child(n+2) td:nth-child(1),
+.last_invest_page table tr td {
+	padding-top: 11px;
+
+}
+
+.last_invest_page .table_last_invest th:nth-child(1),
+
+.last_invest_page .table_last_invest tr:nth-child(n+2) td {
+	padding-bottom: 16px;
+}
+
+.last_invest_page .table_last_invest th:nth-child(1),
+.last_invest_page .table_last_invest td:nth-child(1) {
+	width: 349px;
+}
+
+/*The page last investment was completed */
+/* ------------------ It's a Footer  ------------------ */
+footer {
+	border-top: 1px solid #727272;
+	height: 52px;
+	overflow: hidden;
+
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+
+}
+
+/* It's a Footer*/
 }
