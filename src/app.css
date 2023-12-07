@@ -664,4 +664,221 @@ footer {
 }
 
 /* The page last events was completed */
+/* ------------------ The Modal window ------------------ */
+
+.closed {
+	position: absolute;
+	right: 22px;
+	top: 22px;
+	cursor: pointer;
+}
+
+.modal-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 2;
+}
+
+.modal_ {
+	background-color: white;
+	padding: 20px;
+	padding-top: 45px;
+	border-radius: 26px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	margin-bottom: 10px;
+	min-width: 318px;
+	width: 100%;
+	max-width: 483px;
+	min-height: 722px;
+	overflow: auto;
+	position: relative;
+
+}
+
+.modal_ .date {
+	width: 150px;
+	margin: 0 auto;
+}
+
+.modal_ .avatar {
+	position: initial;
+	display: inline-block;
+	width: 60px;
+	margin: 0 auto;
+	position: absolute;
+	top: 121px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.modal_ .date span {
+	display: inline-block;
+
+}
+
+.modal_ .money,
+.modal_ .profit .name {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.modal_ .profit .name {
+	width: 180px;
+	padding: 0;
+	padding-left: 25px;
+}
+
+.modal_ .profit {
+	flex-direction: column;
+	padding-top: 90px;
+}
+
+.modal_ .profit h6 {
+	font-size: medium;
+
+}
+
+.modal_ .money {
+	width: min-content;
+	padding: 0;
+	width: 150px;
+	padding-top: 29px;
+
+}
+
+.modal_ .money span {
+	padding-right: 16px;
+	font-size: 34px;
+}
+
+
+
+.modal-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	width: 435px;
+	background-color: #F4F4F4;
+	padding: 16px;
+	margin-top: 30px;
+	border-radius: 15px
+}
+
+.modal-header h2 {
+	margin: 0;
+}
+
+.modal-header button {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	font-size: 1.5rem;
+}
+
+.modal_ .preview {
+	width: 40px;
+
+	height: 40px;
+
+	flex-shrink: 0;
+	background: no-repeat left url('./components/modal_window/img/bot_modal.svg');
+	background-size: 40px 40px;
+}
+
+.modal_ .modal-header h6 {
+	font-family: Roboto;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 166%;
+	/* 19.92px */
+	letter-spacing: 0.4px;
+}
+
+.modal-content {
+	padding-top: 30px;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+
+
+.modal-content,
+.modal-content table {
+	width: 100%;
+}
+
+.modal-content tr td {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+.modal-content tr th:nth-child(1) {
+	padding: 5px 0px;
+}
+
+.modal-content tr th[colspan="2"] {
+	padding-top: 40px;
+}
+
+.modal-content tr:nth-child(1) th[colspan="2"] {
+	padding-top: 10px;
+}
+
+/*  */
+.modal-content tr th {
+	text-align: left;
+}
+
+.modal-content tr:last-of-type td:last-of-type {
+	display: flex;
+	text-align: right;
+	justify-content: flex-end;
+	width: 301px;
+	max-width: initial;
+}
+
+.modal-content tr:last-of-type td:last-of-type span:first-of-type,
+.modal-content tr:last-of-type td:last-of-type span:last-of-type {
+	display: inline-block;
+	position: relative;
+	padding-right: 22px;
+}
+
+.modal-content tr:last-of-type td:last-of-type span:first-of-type:after,
+.modal-content tr:last-of-type td:last-of-type span:last-of-type::before {
+
+	content: 'шт.';
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	width: 20px;
+	height: 20px;
+}
+
+.modal-content tr:last-of-type td:last-of-type span:last-of-type {
+	padding-right: initial;
+	padding-left: 25px;
+	margin-left: 5px;
+}
+
+.modal-content tr:last-of-type td:last-of-type span:last-of-type::before {
+	content: "по";
+	display: inline-block;
+	position: absolute;
+	right: auto;
+	left: 0;
+
+}
+
+/* The Modal window */
 }
