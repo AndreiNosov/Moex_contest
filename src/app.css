@@ -454,4 +454,72 @@ section.analytics {}
 }
 
 /* It's a Main completed */
+/* ------------------ Open a new type bank ------------------ */
+.openk_bank>section {
+
+	box-shadow: none;
+}
+
+.openk_bank {
+	padding-top: 49px;
+
+}
+
+.bank_type {
+	padding-top: 34px;
+}
+
+.openk_bank .name,
+.bank_type {
+	flex-wrap: wrap;
+	padding-left: 117px;
+	;
+}
+
+.bank_type input {
+	border: #727272 2px solid;
+}
+
+.bank_type>div:nth-child(n+2) {
+	padding-top: 47px;
+}
+
+.bank_type>div:last-of-type {
+	padding-top: 53px;
+}
+
+.bank_type>div>div:first-of-type {
+	display: flex;
+	align-items: flex-start;
+	width: 100%;
+	min-height: 42px;
+	max-width: 42px;
+	;
+}
+
+.bank_type>div>div:last-of-type {
+	margin-left: 8px;
+
+}
+
+
+
+.bank_type h3 {
+	color: #13161C;
+	font-size: 24px;
+	font-weight: 500;
+}
+
+.bank_type p {
+	color: #13161C;
+	font-size: medium;
+}
+
+.bank_type button {
+	width: 230px;
+	margin-bottom: 19px;
+}
+
+
+/*Open a new type bank is completed */
 }
