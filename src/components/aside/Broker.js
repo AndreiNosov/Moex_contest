@@ -21,7 +21,14 @@ export default function BrokerFC() {
 
 				<div className="case  pt-3 flex">
 
-					<div className="case_preview"></div>
+					{
+						item.name.includes('Брокер') ? (
+							<div className="case_preview"></div>
+						) : (
+							<div className="case_preview bot"></div>
+						)
+
+					}
 					<div className="case_total pt-1.5 grid grid-cols-3 flex-row text-xs">
 						<div className="title grow grid-cols-2 row-span-1 col-span-3">
 							<h5>{item.name}</h5>

@@ -12,7 +12,15 @@ export default function LastEventsFC() {
 		{ ind: 1, date: '15.12.2023', img: black, name: 'Удержание налога по купонам', subname: 'Брокерский счет', quantity: 1, sum: -2870.7 },
 		{ ind: 2, date: '15.12.2023', img: green, name: 'Удержание налога', subname: 'Бот счет 1', quantity: 10, sum: 10087.7 },
 		{ ind: 3, date: '15.12.2023', img: gray, name: 'Вывод с брокерского счета', subname: 'Брокерский счет', quantity: 0, sum: 28700.7 },
-		{ ind: 4, date: '15.12.2023', img: red, name: 'Выплата купонов по облигациям М.Видео выпуск 4', subname: 'RU030940294029402, Брокерский счет', quantity: 0, sum: -3987.7 }
+		{ ind: 4, date: '15.12.2023', img: red, name: 'Выплата купонов по облигациям М.Видео выпуск 4', subname: 'RU030940294029402, Брокерский счет', quantity: 0, sum: -3987.7 },
+		{ ind: 5, date: '15.12.2023', img: black, name: 'Удержание налога по купонам', subname: 'Брокерский счет', quantity: 1, sum: -2870.7 },
+		{ ind: 6, date: '15.12.2023', img: green, name: 'Удержание налога', subname: 'Бот счет 1', quantity: 10, sum: 10087.7 },
+		{ ind: 7, date: '15.12.2023', img: gray, name: 'Вывод с брокерского счета', subname: 'Брокерский счет', quantity: 0, sum: 28700.7 },
+		{ ind: 8, date: '15.12.2023', img: red, name: 'Выплата купонов по облигациям М.Видео выпуск 4', subname: 'RU030940294029402, Брокерский счет', quantity: 0, sum: -3987.7 },
+		{ ind: 9, date: '15.12.2023', img: black, name: 'Удержание налога по купонам', subname: 'Брокерский счет', quantity: 1, sum: -2870.7 },
+		{ ind: 10, date: '15.12.2023', img: green, name: 'Удержание налога', subname: 'Бот счет 1', quantity: 10, sum: 10087.7 },
+		{ ind: 11, date: '15.12.2023', img: gray, name: 'Вывод с брокерского счета', subname: 'Брокерский счет', quantity: 0, sum: 28700.7 },
+		{ ind: 12, date: '15.12.2023', img: red, name: 'Выплата купонов по облигациям М.Видео выпуск 4', subname: 'RU030940294029402, Брокерский счет', quantity: 0, sum: -3987.7 }
 	]
 	return (
 		<>
