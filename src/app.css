@@ -228,6 +228,18 @@ main section.analytics {
 main {
 	width: 100%;
 	max-width: 1378px;
+	position: relative;
+	}
+	
+	.top_reference {
+		position: absolute;
+		top: 49px;
+		right: 40px;
+	}
+	
+	.top_reference:hover a:hover {
+		text-decoration: underline;
+		color: #EC595B;
 }
 
 main>section {
@@ -633,7 +645,9 @@ footer {
 .last_events_page .last_events {
 	padding: 1.6rem 0 0 43px;
 }
-
+.last_events_page main>section:nth-child(2) {
+	height: inherit;
+}
 .table_last_invest th:nth-child(1),
 .table_last_invest tr:nth-child(n+2) td:nth-child(1) {
 	width: 170px;

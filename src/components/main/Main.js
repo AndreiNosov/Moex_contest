@@ -7,19 +7,23 @@ import LastInvestFC from './last_invest/Investment.js';
 
 export default function MainFC() {
 	return (
-		<main className="pl-6 last_events_page">
+		<main className="pl-6 ">
+			<div className="top_reference">
+				<a href="#">Назад к портфелю</a>
+			</div>
+
 			{ /* Main page  главная страница 
 			Чтоб видеть "Выберите тип счета" 
-				- вставьте класс "<div id="root" className="openk_bank">"
+				- вставьте класс "<div id="root" class="openk_bank">"
 				- ниже раскоментировать "Выберите тип счета" 
 
 
 				- Страница "Последние инвестиции" 
-				- "<div id="root" className=" last_invest">"
+				- "<div id="root" class=" last_invest">"
 
 
 				- Страница "Последние события"
-				- "<div id="root" className="last_events_page">"
+				- "<div id="root" class="last_events_page">"
 			
 			
 			*/}
