@@ -6,9 +6,15 @@ import OpenBankFC from './bank_account/OpenBank.js'
 
 export default function MainFC() {
 	return (
-		<main className="pl-6 openk_bank">
-			{ /* Main page */}
-			{/* <section className=" rounded-2xl mb-6">
+		<main className="pl-6">
+			{ /* Main page  главная страница 
+			Чтоб видеть "Выберите тип счета" 
+				- вставьте класс "<main className="pl-6 openk_bank">"
+				- ниже раскоментировать "Выберите тип счета" 
+			
+			
+			*/}
+			<section className=" rounded-2xl mb-6">
 				<StatisticsFC />
 			</section>
 			<section className="analytics mb-4 ">
@@ -17,13 +23,13 @@ export default function MainFC() {
 			<section className="events rounded-2xl bg-white rounded-2xl min-h-[476px] grow pt-6">
 
 				<LastEventsFC />
-			</section> */}
-
-
-			{ /* Open банк oсcount / Открыть счет  */}
-			<section className=" rounded-2xl mb-6">
-				<OpenBankFC />
 			</section>
+
+
+			{ /* "Выберите тип счета"  */}
+			{/* <section className=" rounded-2xl mb-6">
+				<OpenBankFC />
+			</section> */}
 
 		</main>
 	)
