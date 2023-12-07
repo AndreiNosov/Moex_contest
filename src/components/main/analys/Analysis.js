@@ -13,7 +13,7 @@ export default function AnalysisFC() {
 		{ ind: 4, title: 'Валюта' }
 	];
 	return (
-		<section className=" pt-6 analysis w-[432px] min-h-[476px] bg-white rounded-2xl" >
+		<section className=" pt-6 analysis w-[432px] h-[476px] bg-white rounded-2xl" >
 			<HeadingFC title='Аналитика' />
 			<div className="total_money pl-10 pt-4 grow pи-8 text-base text-[#13161C]">
 				<span className="text-[34px] min-w-min pr-7 ">500000.37</span>
