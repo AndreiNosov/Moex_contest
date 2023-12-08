@@ -902,6 +902,7 @@ footer {
 .broker_strategy_type main .broker>div {
 	min-height: 73px;
 	position: relative;
+
 }
 
 .broker_strategy_type main .content {
@@ -1117,9 +1118,7 @@ cursor: underline;
 .broker_strategy_preview div {
 	color: #fff;
 	background-color: #FF0508;
-}
 
-.broker_strategy_preview div {
 	width: 28px;
 	min-height: 28px;
 	max-height: 28px;
@@ -1127,6 +1126,9 @@ cursor: underline;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+.broker_strategy_preview li:last-of-type div {
+	background-color: #727272;
 }
 
 .broker_strategy_preview img {
@@ -1371,5 +1373,66 @@ cursor: underline;
 	bottom: 46px;
 	background: no-repeat center url('./components/main/img/_Icon_trash.svg');
 	cursor: pointer;
+}
+/* -- Templete for a info-block-bulls*/
+.info {
+	max-height: 15.625rem;
+	max-width: 42.0625rem;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	text-align: start;
+	align-items: center;
+}
+
+.info_buuls {
+	margin-top: 34px;
+}
+
+.broker .info_buuls+.button {
+	padding-top: 30px;
+	padding-left: 1px;
+}
+
+.broker .info_buuls+.button span {
+	display: inline-block;
+}
+
+.broker .info_buuls+.button span+button {
+	margin-left: 16px;
+}
+
+.preview_img {
+	border-radius: 25px;
+	background: url('./components/main/img/Ellipse_gradient.svg') lightgray -11.808px 0px / 115% 115.112% no-repeat;
+}
+
+.info_buuls img,
+.info_buuls>div:first-child {
+	width: 250px;
+	min-height: 15.625rem;
+
+}
+
+.info_buuls>div:last-child {
+	width: 25rem;
+}
+
+.info_buuls h4 {
+	color: #13161C;
+	font-size: 1.5rem;
+
+}
+
+.preview_info_text {
+	padding-left: 32px;
+}
+
+.preview_info_text p {
+	display: inline-block;
+	max-width: 400px;
+	max-height: 120px;
+	overflow: hidden;
 }
 }
