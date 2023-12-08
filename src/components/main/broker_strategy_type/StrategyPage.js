@@ -12,6 +12,7 @@ export default function BrokerPageFC() {
 		<div className="broker upload">
 			<HeadingFC title='Выберите тип стратегии' />
 			<StrategyTypyFC />
+			{/* НЕ УДАЛЯТЬ !!! расскоментировать для вкладки "Через прокера" */}
 			{/* <SelectFC list={list} /> */}
 			{/* <div className="content">
 				<h3>Финансовый эксперт</h3>
@@ -25,6 +26,9 @@ export default function BrokerPageFC() {
 				<button className="btn btn-wide">Продолжить</button>
 			</div> */}
 
+
+
+			{ /** !! ниже код для вкладки "Самостоятельно" - загрузка файла  */}
 			<div className="content">
 
 				<h4>

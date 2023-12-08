@@ -118,7 +118,9 @@ nav:hover a.link {
 	width: 266px;
 margin: 0 auto;
 }
-
+.money span {
+	
+}
 .money span,
 .counter_money span,
 .maney,
@@ -964,7 +966,8 @@ footer {
 	min-height: 72px;
 	border-radius: 5px;
 	width: 16rem;
-
+		position: relative;
+			padding-right: 76px;
 
 	padding-left: 1.25rem;
 }
@@ -992,11 +995,17 @@ footer {
 }
 
 .broker_strategy_menu li .preview {
+	position: absolute;
+		right: 25px;
 	cursor: pointer;
 	padding: 0;
 
 	margin: 0;
 	margin-left: 4.0625rem;
+cursor: underline;
+	width: 2.5rem;
+	min-height: 2.5rem;
+	max-height: 2.5rem;
 }
 
 .broker_strategy_menu span {
@@ -1006,10 +1015,7 @@ footer {
 }
 
 .broker_strategy_menu li .preview {
-	cursor: underline;
-	width: 2.5rem;
-	min-height: 2.5rem;
-	max-height: 2.5rem;
+
 	background: no-repeat center url('./components/main/img/bot.svg');
 }
 
