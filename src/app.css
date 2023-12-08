@@ -7,7 +7,12 @@ html {
 background-color: #F4F4F4 !important;
 }
 
-
+h1,
+h2,
+h3,
+h6 {
+	line-height: 1.2;
+}
 #root {
 	max-width: 1920px;
 	width: 100%;
@@ -125,22 +130,6 @@ margin: 0 auto;
 	right: 0;
 }
 
-/* .counter_money>span::before {
-	content: '-';
-	display: inline-block;
-	position: absolute;
-	left: 0;
-}
-
-*/
-/* .case .counter_money>span::before {
-	content: '+';
-	display: inline-block;
-	position: absolute;
-	left: 0;
-}
-
-*/
 .counter_money__today span:after {}
 
 .counter_money__percerntiles::after,
@@ -336,7 +325,7 @@ section.analytics {}
 	padding-left: 10px;
 }
 
-/* table a last invest*/
+/* --table a last invest*/
 .table_last_invest {
 	padding-right: 47px;
 }
@@ -423,7 +412,7 @@ section.analytics {}
 	padding: 0 1.15rem 0 0.35rem;
 }
 
-/* Main a last events */
+/* --Main a last events */
 .events {
 	margin: 0;
 }
@@ -568,10 +557,12 @@ section.analytics {}
 }
 
 .last_invest_page h6,
-.last_events_page h6 {
+.last_events_page h6,
+.broker_strategy_type h6 {
 
 	font-size: 34px;
 }
+
 
 .last_invest_page .last_invest,
 .last_events_page .last_events {
@@ -881,4 +872,310 @@ footer {
 }
 
 /* The Modal window */
+/* ------------------ The broker's all page It's strategy types list  ------------------ */
+.broker_strategy_type .top_reference {
+	display: none;
+}
+
+.broker_strategy_type main .broker {
+	padding-top: 30px;
+}
+
+.broker_strategy_type main .broker {
+	display: flex;
+	flex-direction: column;
+	border-bottom: none;
+	padding-left: 7.375rem;
+}
+
+.broker_strategy_type main .broker>div {
+	min-height: 73px;
+}
+
+.broker_strategy_type main .content {
+	padding-top: 2.1rem;
+	max-width: 41rem;
+	margin: initial;
+	padding-bottom: initial;
+	display: inline-block;
+	position: initial;
+}
+
+
+.broker_strategy_type main .broker h3 {
+	font-size: 1.5rem;
+	display: inline-block;
+	margin-bottom: 1.1875rem;
+}
+
+.broker_strategy_type main .name {
+	padding-left: 0;
+
+}
+
+.broker_strategy_type main .button {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+
+	padding-top: 1.837rem;
+
+}
+
+.broker_strategy_type .button span {
+	color: #727272;
+	display: inline-block;
+	padding-left: 5px;
+	padding-top: 10px;
+}
+
+.broker_strategy_type .button button {
+	width: 12.725rem;
+	margin-left: 15px;
+	height: 2.5625rem;
+	min-height: initial;
+}
+
+.broker_strategy_menu ul {
+	padding-top: 0;
+	padding-left: 0;
+	display: flex;
+	gap: 24px;
+}
+
+.broker_strategy_menu ul li {
+	cursor: pointer;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	background-color: #F4F4F4;
+	min-height: 72px;
+	border-radius: 5px;
+	width: 16rem;
+
+
+	padding-left: 1.25rem;
+}
+
+.broker_strategy_type .broker_strategy_menu ul li {
+	cursor: pointer;
+}
+
+.broker_strategy_menu li:hover,
+.broker_strategy_menu span:hover {
+	background-color: #F4F4F4;
+	color: #FF0508;
+}
+
+.broker_strategy_menu li.active:hover,
+.broker_strategy_menu li.active:hover span,
+.broker_strategy_menu li.active:hover div .broker_strategy_menu li.active,
+.broker_strategy_menu li:active,
+#root .broker_strategy_menu li span:active {
+	background-color: #000;
+	color: #F4F4F4;
+}
+
+.broker_strategy_menu li .preview {
+	cursor: pointer;
+	padding: 0;
+
+	margin: 0;
+	margin-left: 4.0625rem;
+}
+
+.broker_strategy_menu span {
+	padding-left: initial;
+	cursor: underline;
+
+}
+
+.broker_strategy_menu li .preview {
+	cursor: underline;
+	width: 2.5rem;
+	min-height: 2.5rem;
+	max-height: 2.5rem;
+	background: no-repeat center url('./components/main/img/bot.svg');
+}
+
+
+
+.broker_strategy_menu li:active .preview {
+	background-image: url('./components/main/img/bot_white.svg');
+}
+
+.broker_strategy_menu li:nth-child(2) .preview {
+	background-image: url('./components/main/img/case.svg');
+}
+
+.broker_strategy_menu li:nth-child(2):active .preview {
+	background-image: url('./components/main/img/case_white.svg');
+}
+
+.broker_strategy_menu li:nth-child(3) .preview {
+	background-image: url('./components/main/img/icon_black.svg');
+}
+
+.broker_strategy_menu li.active:nth-child(3) .preview,
+.broker_strategy_menu li:nth-child(3):active .preview {
+	background-image: url('./components/main/img/icon.svg');
+}
+
+/* --broker_strategy_preview*/
+.broker_strategy_type>.content {
+	padding-bottom: 8.435rem;
+}
+
+.broker_strategy_type main .broker .broker_strategy_preview {
+	display: flex;
+	justify-content: space-between;
+	min-height: initial;
+	padding-bottom: initial;
+	padding-top: 2.5rem;
+
+}
+
+.broker_strategy_type main>section:nth-child(2) {
+	height: 56.5625rem;
+}
+
+
+.broker_strategy_preview ul {
+	flex-grow: 1;
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.broker_strategy_preview li {
+	display: flex;
+	flex-direction: row-reverse;
+	flex-wrap: nowrap;
+	min-width: 200px;
+	width: 25%;
+
+	justify-content: left;
+	align-items: flex-start;
+}
+
+.broker_strategy_preview li:first-of-type {
+	padding-left: 5px;
+}
+
+.broker_strategy_preview li:nth-child(n+2) {
+	margin-left: 12.7%;
+	position: relative;
+
+}
+
+.broker_strategy_preview li:nth-child(n+2)::after {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	border: 0;
+	border-top: 1px solid #F4F4F4;
+	min-height: initial;
+	height: 1px;
+	max-height: 1px;
+	width: 100%;
+	max-width: 14rem;
+	left: -14.06rem;
+	top: 13px
+}
+
+.broker_strategy_preview li:last-of-type {
+	margin-left: 9.1%;
+}
+
+.broker_strategy_preview span {
+	padding-left: 5px;
+}
+
+.broker_strategy_preview div {
+	color: #fff;
+	background-color: #FF0508;
+}
+
+.broker_strategy_preview div {
+	width: 28px;
+	min-height: 28px;
+	max-height: 28px;
+	border-radius: 16px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.broker_strategy_preview img {
+	width: 15px;
+
+}
+
+.broker_strategy_preview .content {
+	padding-top: 32px;
+}
+
+.broker_strategy_preview h3 {
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 133%;
+}
+
+/* --The Select menu */
+.select_menu {
+	padding-top: 3.125rem;
+	width: 100%;
+	max-width: 25rem;
+	position: relative;
+}
+
+
+.broker_strategy_type .select_menu:before {
+	content: "Финансовый дом";
+	display: inline-block;
+	background-color: #fff;
+	position: absolute;
+	color: #FF0508;
+	font-size: 0.75rem;
+	top: 2.525rem;
+	left: 15px;
+	z-index: 500;
+}
+
+.select_menu select,
+.select_menu select:visited,
+.select_menu select:active,
+.select_menu select:focus-visible .select_menu select:focus-within {
+
+	border-color: #13161C;
+	background: no-repeat url('./components/main/img/arrow_drop_down_filled.svg') 21.9375rem 17px;
+	max-width: 24.5rem;
+	min-height: 58px;
+	max-height: 58px;
+}
+
+.select_menu select:active {
+	background: no-repeat url("./components/main/img/arrow_drop_up_filled.svg") 22.4375rem 26.3px
+}
+
+.select_menu select:focus {
+	outline: none;
+	border-color: #FF0508;
+	box-shadow: #13161C;
+}
+
+.select_menu select option {
+	color: #13161C;
+	font-size: 1rem;
+	line-height: 24px;
+	margin-bottom: 10px;
+	border: initial
+}
+
+.select_menu select:focus option {
+	border: 0;
+	appearance: none;
+}
 }

@@ -10,8 +10,8 @@ const App = (props) => {
 	return (
 		<>
 			<HeaderFC /> 
-			<ModelFC /> {/* Модальное окнок "Покупка акций"*/}
-			<div className='content pt-6 flex'>
+			{/* <ModelFC /> Модальное окно  "Покупка акций"  Раскомментировать*/}
+			<div className='content pt-6 flex broker_strategy_type'>
 				<SidebarFC />
 				<MainFC />
 				<FooterFC />
