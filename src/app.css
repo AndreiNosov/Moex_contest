@@ -899,6 +899,7 @@ footer {
 
 .broker_strategy_type main .broker>div {
 	min-height: 73px;
+	position: relative;
 }
 
 .broker_strategy_type main .content {
@@ -1201,8 +1202,35 @@ footer {
 .upload_file {
 	position: relative;
 }
+.form_file__upload {
+	padding-left: 4.437rem;
+}
 
-.upload_file::before {
+.upload_file label>div:first-of-type {
+	position: relative;
+}
+
+.demo_wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+
+	min-height: 104px;
+
+}
+
+.upload_file label>div:nth-child(2) span {
+	position: relative;
+}
+
+.upload_file label>div:nth-child(2) span:nth-child(1) {
+	display: inline-block;
+	padding-top: 23px;
+	width: 100%;
+	max-height: 50px;
+}
+
+.upload_file label>div:first-of-type:before {
 	content: '';
 	display: inline-block;
 	position: absolute;
@@ -1216,6 +1244,56 @@ footer {
 	transform: translate(-50%, -50%);
 }
 
+.upload_file label>div:nth-child(2) span:nth-child(2) {
+	padding-right: 25px;
+}
+
+.upload_file label>div:nth-child(2) span:nth-child(3) {
+	padding: 0 0 0 11px;
+	flex-grow: 2;
+	width: 62%;
+}
+
+.upload_file label>div:nth-child(2) span:nth-child(2)::after {
+	content: 'Kb';
+	display: inline-block;
+	width: 15px;
+	position: absolute;
+}
+
+.upload_file label>div:nth-child(2) span:nth-child(3):before {
+	content: '.';
+	font-size: 15px;
+	color: #727272;
+	position: absolute;
+	left: 0px;
+	top: -4px;
+	font-weight: 500;
+}
+
+.indicator_upload {
+	display: inline-flex;
+	position: relative;
+	width: 100%;
+	max-width: 200px;
+	height: 4px;
+	border: 0;
+	box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.10);
+	background-color: #F4F4F4;
+	border-radius: 4px;
+	margin-top: 5px;
+}
+
+.upload_file label>div:nth-child(2) .indicator_upload span {
+	display: inline-block;
+	height: 100%;
+	max-height: 5px;
+	background-color: #13161C;
+	padding: 0;
+	margin: 0;
+	box-shadow: none;
+	width: 40%;
+}
 .text_preview__upload {
 	display: flex;
 	max-width: 41.875rem;
@@ -1223,7 +1301,7 @@ footer {
 	max-height: 9.8rem;
 	border: 1px dashed #727272;
 	padding-bottom: 23px;
-
+	overflow: hidden;
 	box-sizing: border-box;
 }
 
@@ -1254,5 +1332,38 @@ footer {
 
 	display: inline;
 	height: initial;
+}
+.form_upload__label .form_upload__input {
+	background: none;
+	border: 0;
+	width: 0;
+	height: 0;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.broker.upload .button {
+	padding-top: 20px;
+
+}
+
+.upload .button span {
+	display: none;
+}
+
+.upload .button button {
+	margin-left: 0px;
+	font-size: 1rem;
+}
+
+.trash_file {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	right: 39px;
+	bottom: 46px;
+	background: no-repeat center url('./components/main/img/_Icon_trash.svg');
+	cursor: pointer;
 }
 }
