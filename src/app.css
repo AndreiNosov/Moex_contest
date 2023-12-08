@@ -5,13 +5,22 @@
 
 html {
 background-color: #F4F4F4 !important;
-}
 
+}
+* {
+	font-size: 16px;
+}
 h1,
 h2,
 h3,
+h4,
 h6 {
 	line-height: 1.2;
+}
+h4 {
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 24px;
 }
 #root {
 	max-width: 1920px;
@@ -894,7 +903,7 @@ footer {
 
 .broker_strategy_type main .content {
 	padding-top: 2.1rem;
-	max-width: 41rem;
+	max-width: 43rem;
 	margin: initial;
 	padding-bottom: initial;
 	display: inline-block;
@@ -1183,5 +1192,67 @@ footer {
 .select_menu select:focus option {
 	border: 0;
 	appearance: none;
+}
+/* --The by yourself - is upload file */
+.upload h4 {
+	margin-bottom: 24px;
+}
+
+.upload_file {
+	position: relative;
+}
+
+.upload_file::before {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	width: 18px;
+	min-height: 20px;
+	max-height: 20px;
+	background: no-repeat center url('./components/main/img/_Icon_file_red.svg');
+	position: absolute;
+	top: 29%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.text_preview__upload {
+	display: flex;
+	max-width: 41.875rem;
+	min-height: 9.8rem;
+	max-height: 9.8rem;
+	border: 1px dashed #727272;
+	padding-bottom: 23px;
+
+	box-sizing: border-box;
+}
+
+.text_preview__upload p {
+	font-size: o.875rem;
+}
+
+.text_preview__upload p:first-child {
+	line-height: 45px
+}
+
+.text_preview__upload p:first-child span {
+	color: #FF0508;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.text_preview__upload {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+
+.text_preview__upload p {
+	display: inline;
+
+	display: inline;
+	height: initial;
 }
 }
