@@ -4,7 +4,7 @@ import AnalyticsFC from "./analys/Analitics.js";
 import LastEventsFC from "./last_events/LastEvents.js";
 import OpenBankFC from './bank_account/OpenBank.js'
 import LastInvestFC from './last_invest/Investment.js';
-
+import BrokerPageFC from './broker_strategy_type/StrategyPage.js';
 export default function MainFC() {
 	return (
 		<main className="pl-6 ">
@@ -12,25 +12,25 @@ export default function MainFC() {
 				<a href="#">Назад к портфелю</a>
 			</div>
 
-			{ /* Main page  главная страница 
-			Чтоб видеть "Выберите тип счета" 
-				- вставьте класс "<div id="root" class="openk_bank">"
-				- ниже раскоментировать "Выберите тип счета" 
+			{ /* Main page - главная страница
+			Чтоб видеть "Выберите тип счета"
+				- вставьте класс (afqk App.js)"<div className='content pt-6 flex openk_bank">"
+				- ниже раскоментировать "Выберите тип счета"
 
 
-				- Страница "Последние инвестиции" 
-				- "<div id="root" class=" last_invest">"
+				- Страница "Последние инвестиции"
+				- "<div className='content pt-6 flex  last_invest">"
 
 
 				- Страница "Последние события"
-				- "<div id="root" class="last_events_page">"
+				- "<div className='content pt-6 flex last_events_page">"
 
-		
+
 				- Окно "Модальное"
-				- Смю "App.js"
+				- См. "App.js"
 				- Расскоментировать "	<ModelFC />" строку
-			
-			
+
+
 			*/}
 			{ /* " Main page  главная страница "  */}
 			{/* <section className=" rounded-2xl mb-6">
@@ -61,10 +61,15 @@ export default function MainFC() {
 
 
 
-			{/* Окно "Модальное"*/}
-			<section className="events rounded-2xl bg-white rounded-2xl min-h-[476px] grow pt-6">
+			{/* Окно "Модальное"
+				Страницв выпбрать 
+				"Выберите тип стратегии" - bg-image - событие отпускаем клик - при открытом выподающем меню
+				  стрелка возвращется в басовое положение
+			*/}
 
-				<LastEventsFC />
+			<section className="events rounded-2xl bg-white rounded-2xl min-h-[476px] grow pt-6">
+				{/* <ModelFC /> */}
+				<BrokerPageFC />
 			</section> 
 
 		</main>
