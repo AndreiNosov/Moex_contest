@@ -31,6 +31,12 @@ export default function MainFC() {
 				- Расскоментировать "	<ModelFC />" строку
 
 
+				
+				- "Самостоятельно" вкладка для ЗАГРУЗКИ файла
+					Читать ниже + 
+					"StrategyPage.js" - расскоментиироваро код в файле .
+
+
 			*/}
 			{ /* " Main page  главная страница "  */}
 			{/* <section className=" rounded-2xl mb-6">
@@ -62,20 +68,27 @@ export default function MainFC() {
 
 
 			{/* Окно "Модальное"
-				Страницв выпбрать 
+				Страницв выбрать 
 				"Выберите тип стратегии" - bg-image - событие отпускаем клик - при открытом выподающем меню
-				  стрелка возвращется в басовое положение
+				  стрелка возвращется в баpовое положение
 
 
-					МенюЖ
+					Меню:
 					- Создать бота
 					- Через брокера
 					- Самостоятельно, активная вкладка владеет классом ".active"
+
+
+
+					"Самостоятельно" вкладка для ЗАГРУЗКИ файла
+					- добавляется class="upload" - main> section[class="events"] > div "<div className="broker upload">"
 			*/}
 
 			<section className="events rounded-2xl bg-white rounded-2xl min-h-[476px] grow pt-6">
 				{/* <ModelFC /> */}
-				<BrokerPageFC />
+				<BrokerPageFC />  {/** - "Выберите тип стратегии" вкладка "Через брокера" */}
+
+				{/**"StrategyPage.js" - расскоментиироваро код в файле . */}
 			</section> 
 
 		</main>
