@@ -249,7 +249,7 @@ main>section {
 	width: 100%;
 	max-width: 1354px;
 	height: 408px;
-		overflow: hidden;
+		
 	}
 	
 	main>section:nth-child(2) {
@@ -343,9 +343,11 @@ section.analytics {}
 .table_last_invest {
 	padding-right: 47px;
 }
-
+.table_last_invest tr:nth-child(n+1) td:nth-child(1) span:first-child,
 .table_last_invest th {
 	padding-top: 24px;
+	font-weight: 600;
+		color: #13161C;
 }
 
 .table_last_invest th:nth-child(1) {
@@ -354,12 +356,8 @@ section.analytics {}
 
 }
 
-.table_last_invest th:nth-child(1),
-.table_last_invest tr:nth-child(n+2) td:nth-child(1) {
-	min-width: 138px;
-}
 
-.table_last_invest tr:nth-child(n+2) td:nth-child(1) {
+.table_last_invest tr:nth-child(n+1) td:nth-child(1) {
 	padding-left: 10px;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -369,7 +367,7 @@ section.analytics {}
 }
 
 
-.table_last_invest tr:nth-child(n+2) td:nth-child(1) div {
+.table_last_invest tr:nth-child(n+1) td:nth-child(1) div {
 	display: flex;
 	flex-direction: column;
 	padding-left: 12px;
@@ -387,7 +385,7 @@ section.analytics {}
 
 .table_last_invest tr:nth-child(n+2) td {
 	padding-top: 24px;
-
+	color: #2B2D33;
 }
 
 .table_last_invest tr:nth-child(n+2) td:nth-child(n+2) {
@@ -579,8 +577,13 @@ section.analytics {}
 
 	font-size: 34px;
 }
+.slider+div h6 {
+	font-size: 24px;
+}
 
-
+ .broker>.slider+.name {
+ 	min-height: 61px;
+ }
 .last_invest_page .last_invest,
 .last_events_page .last_events {
 	padding: 2.8rem 0 40px 24px;
@@ -596,6 +599,7 @@ section.analytics {}
 	padding-left: 1.2rem;
 	padding-right: 100px;
 }
+
 
 .last_invest_page table tr:nth-child(n+1),
 .last_events_page table tr:nth-child(n+1) {
@@ -638,6 +642,7 @@ footer {
 
 /* It's a Footer*/
 /* ------------------ The page last events ------------------ */
+
 .last_events_page .content {
 	padding-bottom: 140px;
 }
@@ -655,12 +660,16 @@ footer {
 }
 .last_events_page main>section:nth-child(2) {
 	height: inherit;
-}
-.table_last_invest th:nth-child(1),
-.table_last_invest tr:nth-child(n+2) td:nth-child(1) {
-	width: 170px;
+
 }
 
+.table_last_invest th:nth-child(1),
+.table_last_invest tr td:nth-child(1) {
+	min-width: 170px;
+	width: 100%;
+	max-width: 250px;
+	display: flex;
+}
 .last_events_page tr th:nth-child(5),
 .last_events_page tr:nth-child(n+2) td:last-of-type {
 	text-align: right;
@@ -671,6 +680,22 @@ footer {
 	max-width: 122px;
 }
 
+.table_last_invest thead tr:first-of-type {
+	border-top: 1px solid #F4F4F4;
+	border-radius: 55px 55px 0 0;
+}
+
+.table_last_invest tbody tr:last-of-type {
+	border-bottom: 1px solid #F4F4F4;
+	border-radius: 0 0 55px 55px;
+}
+
+.table_last_invest tbody tr,
+.table_last_invest thead tr {
+	border-left: 1px solid #F4F4F4;
+	border-right: 1px solid #F4F4F4;
+
+}
 /* The page last events was completed */
 /* ------------------ The Modal window ------------------ */
 
@@ -1444,8 +1469,287 @@ cursor: underline;
 /*The broker's all page It' s strategy types list - now completed */
 
 /* The calculate's info page */
+.broker.calculation {
+	max-width: 1261px;
+	/* margin: 0 auto; */
+}
+
+.info_calculate {
+	display: flex;
+	flex-direction: column;
+}
 .info_sum,
 .info_calculate {
 	display: none;
+}
+.calculation .info_sum,
+.calculation .info_calculate {
+	display: flex;
+}
+
+.info_calculate .last_invest,
+.info_calculate .invest_table {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+/* -- The header h6*/
+.info_calculate .last_invest {
+	padding-top: 44px;
+	;
+}
+
+.info_calculate .last_invest .name {
+	display: none;
+}
+
+.info_calculate>.name h6 {
+	font-size: 1.5rem;
+}
+
+.info_calculate .to-do+.name {
+	padding-top: 56px;
+}
+
+/* -- Theteble's last investment*/
+/* .info_calculate .invest_table {
+	padding-left: 25px;
+} */
+
+
+
+div.invest_table {
+	padding-left: 0;
+}
+
+.table_last_invest tr:nth-child(n+1) td:nth-child(1),
+.table_last_invest th:nth-child(1) {
+	padding-left: 38px;
+}
+
+
+
+.to-do-menu {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2%;
+	justify-content: flex-start;
+
+	align-items: flex-start;
+	flex-shrink: 0;
+}
+
+/* Below a menu for selectiing the action */
+main .broker div.child_header {
+	display: flex;
+	flex-wrap: nowrap;
+	position: relative;
+	height: 55px;
+	min-height: 55px;
+}
+
+.child_header span {
+	position: absolute;
+	right: 54px;
+	top: 5px
+}
+
+
+.to-do-menu li {
+	position: relative;
+	height: 72px;
+
+	width: 100%;
+	max-width: 16rem;
+	min-width: 72px;
+
+	border-radius: 8px;
+	background: var(--grey-light-grey, #F4F4F4);
+
+	padding: 24px;
+
+}
+
+.to-do-menu li:first-of-type {
+	margin-bottom: 1.5rem;
+}
+
+.to-do-menu li span {
+	font-weight: 400;
+	line-height: 150%;
+	/* 24px */
+	letter-spacing: 0.15px;
+	color: #13161C;
+}
+
+.to-do-menu li img {
+	position: absolute;
+	right: 24px;
+	top: 14px;
+}
+
+/* -- slider */
+
+
+.broker_strategy_type main .broker .slider {
+	display: flex;
+	height: 224px;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	padding-left: 24px;
+	padding-right: 24px;
+
+	justify-content: space-between;
+	align-items: center;
+
+	border-radius: 24px;
+
+	background: #2B2D33;
+	margin-bottom: 63px;
+
+}
+
+
+.slider img {
+	max-height: 227px;
+}
+
+.slider .carousel {
+	flex-grow: 2;
+
+}
+
+.carousel .carousel-item {
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.slider,
+.slider {
+	width: 1096px;
+	height: 208px;
+}
+
+.carousel {
+	height: 134px;
+}
+
+.slider .carousel>div {
+
+	max-height: 204px;
+
+}
+
+.slider .carousel+div a {
+	background-color: #727272;
+	width: 8px;
+	height: 8px;
+	font-size: 0;
+	min-height: initial;
+	min-width: initial;
+	padding: 0;
+}
+
+.slider .carousel+div .active {
+	background-color: #FF0508;
+}
+
+.calculated_bank {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-between;
+	flex-grow: 2;
+}
+
+.calculated_bank>div:first-of-type {
+	width: 100%;
+	max-width: 14.125rem;
+	display: none;
+}
+
+.calculated_bank img,
+.calculated_bank .preview_img {
+	height: 178px;
+}
+
+/* --*/
+.carousel .case_counter {
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 116%;
+	color: #fff;
+	padding-right: 2.5rem;
+}
+
+.calculated_bank .bank-total_sum,
+.calculated_bank .percerntiles {
+	width: 100%;
+	max-width: 630px;
+	display: flex;
+	justify-content: flex-end;
+	color: #7DD14A;
+}
+
+.calculated_bank .percerntiles {
+	max-width: 118px;
+}
+
+.calculated_bank .percerntiles span,
+.calculated_bank .counter_money span {
+	font-family: Roboto;
+	font-size: 34px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 123%;
+	/* 41.82px */
+	letter-spacing: 0.25px;
+	padding-right: 2.5rem;
+}
+
+.bank-total_statis {
+	justify-content: center;
+}
+
+.bank-total_statis.counter_money__percerntiles::after,
+.bank-total_statis.counter_money__percerntiles::before {
+	content: "%)";
+	right: 0;
+	font-size: larger;
+	font-size: 31px;
+	top: -6px;
+}
+
+.bank-total_statis.counter_money__percerntiles::after {
+	content: "(";
+	right: 0;
+	font-size: larger;
+	font-size: 31px;
+	padding-right: 0;
+}
+
+.counter_money__percerntiles[after] {
+	font-size: 115px;
+}
+
+.calculated_bank .percerntiles span {
+
+	padding-right: 30px;
+}
+
+.slider>div:last-of-type {
+	position: absolute;
+	bottom: -35px;
+	position: absolute;
+	top: 108%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/*Another*/
+main section.events:nth-child(2) {
+	height: initial;
 }
 }

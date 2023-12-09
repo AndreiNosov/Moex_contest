@@ -1,5 +1,5 @@
 import React from "react"
-import vector_white from './img/vector_white.svg';
+import vector_white from '../pic/vector_white.svg';
 
 
 /**

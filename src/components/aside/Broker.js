@@ -1,4 +1,4 @@
-import React, { StrictMode } from 'react';
+import React from 'react';
 
 
 
@@ -13,7 +13,7 @@ export default function BrokerFC() {
 	return (
 		<section className="broker pl-4">
 
-			<StrictMode>
+
 			{broker_arr.map((item) => (
 
 
@@ -64,7 +64,7 @@ export default function BrokerFC() {
 				</div >
 
 			))}
-			</StrictMode>
+
 		</section>
 	);
 }

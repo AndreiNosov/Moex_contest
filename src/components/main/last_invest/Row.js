@@ -1,4 +1,4 @@
-import React, { StrictMode } from "react";
+import React from "react";
 
 
 export default function RowFC(prop) {
@@ -9,7 +9,7 @@ export default function RowFC(prop) {
 		invest.map(item => (
 
 			<>
-				<StrictMode>
+
 
 
 				<tr key={item.ind}>
@@ -56,7 +56,7 @@ export default function RowFC(prop) {
 						}
 					</td>
 				</tr>
-				</StrictMode>
+
 			</>
 
 		))

@@ -1,4 +1,4 @@
-import React, { StrictMode } from "react";
+import React from "react";
 import ButtonFC from "../../pages/Buttons.js";
 export default function BotFC() {
 	return (

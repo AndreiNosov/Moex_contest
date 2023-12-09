@@ -1,4 +1,4 @@
-import React, { StrictMode } from "react";
+import React from "react";
 import MyTimeFC from "./MyTime";
 /**
  * 
@@ -14,13 +14,13 @@ export default function ButtonFC(prop) {
 	const title = prop.title;
 	const ind = <MyTimeFC />
 	return (
-		<><StrictMode>
+		<>
 			<div key={ind} className="button" >
 
 				{console.log('ID-button', ind)}
 			<span>Назад</span>
 			<button className="btn btn-wide">{title}</button>
 			</div>
-		</StrictMode></>
+		</>
 	)
 }

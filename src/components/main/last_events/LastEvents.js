@@ -24,7 +24,7 @@ export default function LastEventsFC() {
 	]
 	return (
 		<>
-			<HeadingFC title="Последние события" />
+
 			<div className="last_events  pl-10 ">
 				<table className=" table_last_invest w-full">
 					<thead>

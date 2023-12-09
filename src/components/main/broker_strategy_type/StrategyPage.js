@@ -25,7 +25,7 @@ export default function BrokerPageFC() {
 
 			{ /** "InfoBlockBulls.js" Вкладка "Создать бота" 
 			 * 
-			 * Files: < src\components\main\broker_strategy_type\img >
+			 * Files: < src\pic >
 			 * - bears.svg
 			 * - drakon.svg
 			 * - bull.png
