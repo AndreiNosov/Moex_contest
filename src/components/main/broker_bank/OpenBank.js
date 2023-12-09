@@ -1,5 +1,5 @@
 import React from "react";
-import ButtonFC from "../../../pages/Buttons";
+import ButtonFC from "../../../pages/Buttons.js";
 export default function OpenBankFC() {
 	return (
 

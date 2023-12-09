@@ -1,5 +1,5 @@
-import React from "react";
-
+import React, { StrictMode } from "react";
+import MyTimeFC from "./MyTime";
 /**
  * 
  * @param {string} prop.title - title wich we look on the page's button
@@ -12,11 +12,15 @@ import React from "react";
  */
 export default function ButtonFC(prop) {
 	const title = prop.title;
+	const ind = <MyTimeFC />
 	return (
-		<div className="button" >
+		<><StrictMode>
+			<div key={ind} className="button" >
 
+				{console.log('ID-button', ind)}
 			<span>Назад</span>
 			<button className="btn btn-wide">{title}</button>
-		</div>
+			</div>
+		</StrictMode></>
 	)
 }

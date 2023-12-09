@@ -35,8 +35,9 @@ export default function LastInvestFC() {
 						<th>Динамика</th>
 					</tr>
 					</thead>
+					<tbody>
 					<RowFC invest={dataInvest} />
-
+					</tbody>
 				</table>
 			</div>
 		</section>

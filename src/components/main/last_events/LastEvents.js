@@ -27,15 +27,18 @@ export default function LastEventsFC() {
 			<HeadingFC title="Последние события" />
 			<div className="last_events  pl-10 ">
 				<table className=" table_last_invest w-full">
+					<thead>
 					<tr >
 						<th >Дата и время</th>
 						<th>События</th>
 						<th></th>
 						<th>Количество</th>
 						<th>Сумма</th>
-					</tr>
+						</tr>
+					</thead>
+					<tbody>
 					<RowEventsFC events={dataEvents} />
-
+					</tbody>
 				</table>
 			</div>
 		</>

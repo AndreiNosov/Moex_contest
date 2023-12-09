@@ -89,7 +89,7 @@ export default function MainFC() {
 
 			<section className="events rounded-2xl bg-white rounded-2xl min-h-[476px] grow pt-6">
 				{/* <ModelFC /> */}
-				<BrokerPageFC />  {/** - "Выберите тип стратегии" вкладка "Через брокера" */}
+				{/* <BrokerPageFC /> */} {/** - "Выберите тип стратегии" вкладка "Через брокера" */}
 				{/**"StrategyPage.js" - расскоментиироваро код в файле . */}
 
 
