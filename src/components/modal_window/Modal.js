@@ -34,11 +34,12 @@ export default function ModelFC() {
 				</div>
 				<div className="modal-content">
 					<table>
-						<header>
+						<thead>
 							<tr>
 								<th className="title" colspan="2"><span>Детали</span></th>
 							</tr>
-						</header>
+						</thead>
+						<tbody>
 						<tr>
 							<td>
 								Цена покупки
@@ -75,7 +76,7 @@ export default function ModelFC() {
 								<span className="case_counter">200.7</span>
 							</td>
 						</tr>
-
+						</tbody>
 					</table>
 				</div>
 			</div>

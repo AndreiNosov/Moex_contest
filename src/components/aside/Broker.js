@@ -4,9 +4,9 @@ import React from 'react';
 
 export default function BrokerFC() {
 	const broker_arr = [
-		{ id: 1, name: 'Брокерский счет', sum: 102899.78, counter: +4.78, percerntiles: 0.89 },
-		{ id: 2, name: 'Бот счет 1', sum: 30899.78, counter: -14.78, percerntiles: 15.8 },
-		{ id: 3, name: 'Бот счет 2', sum: 200890.98, counter: -20.78, percerntiles: 20.8 }
+		{ ind: 1, name: 'Брокерский счет', sum: 102899.78, counter: +4.78, percerntiles: 0.89 },
+		{ ind: 2, name: 'Бот счет 1', sum: 30899.78, counter: -14.78, percerntiles: 15.8 },
+		{ ind: 3, name: 'Бот счет 2', sum: 200890.98, counter: -20.78, percerntiles: 20.8 }
 
 	]
 
@@ -19,7 +19,7 @@ export default function BrokerFC() {
 
 			// <BrokerContent item={item} />
 
-				<div className="case  pt-3 flex">
+				<div key={item.ind} className="case  pt-3 flex">
 
 					{
 						item.name.includes('Брокер') ? (

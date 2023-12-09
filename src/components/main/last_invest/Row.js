@@ -9,6 +9,9 @@ export default function RowFC(prop) {
 		invest.map(item => (
 
 			<>
+
+
+
 				<tr key={item.ind}>
 					<td>
 						<img src={item.img} />
@@ -53,6 +56,7 @@ export default function RowFC(prop) {
 						}
 					</td>
 				</tr>
+
 			</>
 
 		))
