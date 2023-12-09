@@ -10,7 +10,9 @@ export default function InfoBlockBullFC() {
 			<div className="preview_info_text">
 				<h4>Быки</h4>
 				<p>Lorem ipsum dolor sit amet consectetur. Quisque turpis nam urna sit non. Integer mi consectetur semper bibendum nisl ut congue. Nam convallis in ipsum tincidunt. Venenatis malesuada vel fames mauris.</p>
+
 			</div>
+
 		</div>
 	)
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import HeadingFC from "../Heading";
+import HeadingFC from "../../pages/Heading";
 
 
 export default function StatisticsFC() {

@@ -6,7 +6,10 @@ import MainFC from './components/main/Main.js'
 import FooterFC from './components/footer/footer.js';
 import ModelFC from './components/modal_window/Modal.js';
 
-const App = (props) => {
+const App = () => {
+
+
+
 	return (
 		<>
 			<HeaderFC /> 

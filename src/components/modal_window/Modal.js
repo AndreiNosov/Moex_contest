@@ -1,5 +1,5 @@
 import React from "react";
-import HeadingFC from "../Heading.js";
+import HeadingFC from "../../pages/Heading";
 import close from "../main/img/сlose.svg";
 
 export default function ModelFC() {

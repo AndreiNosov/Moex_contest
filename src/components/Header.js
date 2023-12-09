@@ -1,17 +1,20 @@
 import React from "react";
+import MenuFC from "../pages/Menu";
 
-export default function HeaderFC(props) {
+export default function HeaderFC() {
+
+	const refers = [
+		{ ind: 1, ref: "/briefcase", title: "Портфель" },
+		{ ind: 2, ref: "/catalog", title: "Каталог" },
+		{ ind: 3, ref: "/analytics", title: "Аналитика" },
+		{ ind: 4, ref: "/news", title: "Новости" }
+	]
 	return (
 		<header className="flex flex-row pt-[30px] bg-white h-[88px] basis-full">
 			<div className="toolbar flex flex-row">
 				<div className='nav flex-none flex flex-row basis-[933px]'>
 					<nav className="flex basis-full">
-						<ul className="flex basis-full flex-row flex-nowrap">
-							<li className="flex-none flex "><a className="pt-[13px] pr-4 pl-4 link link-neutral" hfre="/briefcase">Портфель</a></li>
-							<li className="flex-none flex"><a className="pt-[13px]  pr-4  pl-4 link link-neutral" hfre="/catalog">Каталог</a></li>
-							<li className="flex-none flex"><a className="pt-[13px]  pr-4  pl-4 link link-neutral" hfre="/analytics">Аналитика</a></li>
-							<li className="flex-none flex"><a className="pt-[13px]  pr-4 pl-4 link link-neutral" hfre="/news">Новости</a></li>
-						</ul>
+						<MenuFC refers={refers} />
 
 					</nav>
 				</div>

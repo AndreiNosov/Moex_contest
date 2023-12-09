@@ -552,6 +552,9 @@ section.analytics {}
 	color: #13161C;
 	font-size: medium;
 }
+.bank_type div.button span {
+	display: none;
+}
 
 .bank_type button {
 	width: 230px;
@@ -1046,12 +1049,12 @@ cursor: underline;
 	background-image: url('./components/main/img/icon.svg');
 }
 
-/* --broker_strategy_preview*/
+/* --waiting*/
 .broker_strategy_type>.content {
 	padding-bottom: 8.435rem;
 }
 
-.broker_strategy_type main .broker .broker_strategy_preview {
+.broker_strategy_type main .broker .waiting {
 	display: flex;
 	justify-content: space-between;
 	min-height: initial;
@@ -1065,13 +1068,13 @@ cursor: underline;
 }
 
 
-.broker_strategy_preview ul {
+.waiting ul {
 	flex-grow: 1;
 	display: flex;
 	flex-wrap: nowrap;
 }
 
-.broker_strategy_preview li {
+.waiting li {
 	display: flex;
 	flex-direction: row-reverse;
 	flex-wrap: nowrap;
@@ -1082,17 +1085,17 @@ cursor: underline;
 	align-items: flex-start;
 }
 
-.broker_strategy_preview li:first-of-type {
+.waiting li:first-of-type {
 	padding-left: 5px;
 }
 
-.broker_strategy_preview li:nth-child(n+2) {
+.waiting li:nth-child(n+2) {
 	margin-left: 12.7%;
 	position: relative;
 
 }
 
-.broker_strategy_preview li:nth-child(n+2)::after {
+.waiting li:nth-child(n+2)::after {
 	content: '';
 	display: inline-block;
 	position: absolute;
@@ -1107,15 +1110,15 @@ cursor: underline;
 	top: 13px
 }
 
-.broker_strategy_preview li:last-of-type {
+.waiting li:last-of-type {
 	margin-left: 9.1%;
 }
 
-.broker_strategy_preview span {
+.waiting span {
 	padding-left: 5px;
 }
 
-.broker_strategy_preview div {
+.waiting div {
 	color: #fff;
 	background-color: #FF0508;
 
@@ -1127,20 +1130,20 @@ cursor: underline;
 	justify-content: center;
 	align-items: center;
 }
-.broker_strategy_preview li:last-of-type div {
+.waiting li:last-of-type div {
 	background-color: #727272;
 }
 
-.broker_strategy_preview img {
+.waiting img {
 	width: 15px;
 
 }
 
-.broker_strategy_preview .content {
+.waiting .content {
 	padding-top: 32px;
 }
 
-.broker_strategy_preview h3 {
+.waiting h3 {
 	font-size: 24px;
 	font-style: normal;
 	font-weight: 400;
@@ -1434,5 +1437,12 @@ cursor: underline;
 	max-width: 400px;
 	max-height: 120px;
 	overflow: hidden;
+}
+/*The broker's all page It' s strategy types list - now completed */
+
+/* The calculate's info page */
+.info_sum,
+.info_calculate {
+	display: none;
 }
 }

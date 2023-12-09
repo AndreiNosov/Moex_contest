@@ -1,5 +1,5 @@
 import React from "react";
-import HeadingFC from '../../Heading.js';
+import HeadingFC from "../../../pages/Heading.js";
 import RowEventsFC from './EventsRows.js';
 
 import black from '../last_invest/img/black.svg';

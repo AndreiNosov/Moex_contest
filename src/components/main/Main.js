@@ -2,9 +2,11 @@ import React from "react";
 import StatisticsFC from './Statistics.js'
 import AnalyticsFC from "./analys/Analitics.js";
 import LastEventsFC from "./last_events/LastEvents.js";
-import OpenBankFC from './bank_account/OpenBank.js'
+import OpenBankFC from "./broker_bank/OpenBank.js";
 import LastInvestFC from './last_invest/Investment.js';
 import BrokerPageFC from './broker_strategy_type/StrategyPage.js';
+import CalculationFC from "./broker_bank/calculation.js";
+
 export default function MainFC() {
 	return (
 		<main className="pl-6 ">
@@ -57,6 +59,7 @@ export default function MainFC() {
 			</section> */}
 
 
+
 			{ /* "Последние инвестиции"  */}
 			{/* <section className=" rounded-2xl mb-6">
 				<div className=" flex grow">
@@ -88,6 +91,12 @@ export default function MainFC() {
 				{/* <ModelFC /> */}
 				<BrokerPageFC />  {/** - "Выберите тип стратегии" вкладка "Через брокера" */}
 				{/**"StrategyPage.js" - расскоментиироваро код в файле . */}
+
+
+				{/**src\pages\Carousel.js
+				 * "Брокерский счет" страница
+				*/}
+				<CalculationFC />
 			</section> 
 
 		</main>

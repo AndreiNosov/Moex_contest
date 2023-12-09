@@ -10,7 +10,7 @@ export default function SidebarFC() {
 				<h1>Брокерские счета</h1>
 			</div>
 			<div className="money text-2xl   pt-6 pl-4 font-medium text-black font-sans">
-				<span className="  w-[88px]">389089,34 </span>
+				<span className=" text-2xl pr-3.5 min-w-min w-[88px]">389089,34 </span>
 			</div>
 			<div className="counter flex pt-1.5 pb-4 text-2xl pl-4 border-b-[1px] ">
 				<div className=" maney counter_money min-w-fit  font-sans">

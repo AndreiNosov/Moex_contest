@@ -1,7 +1,10 @@
 import React from "react";
-import vector_white from '../img/vector_white.svg';
+
+import WaitingWayFC from "../../../pages/WaitingWay";
+
 
 export default function StrategyTypyFC() {
+
 	return (
 
 		<>
@@ -25,28 +28,9 @@ export default function StrategyTypyFC() {
 				</ul>
 
 			</div>
-			<div className="broker_strategy_preview">
-				<ul className="">
-					<li>
-						<span>Выбор финансового дома</span>
-						<div className="preview">
-							<img src={vector_white} />
-						</div>
-					</li>
-					<li>
-						<span>Подключитесь к брокеру</span>
-						<div className="preview">
-							2
-						</div>
-					</li>
-					<li>
-						<span>Подключитесь к брокеру</span>
-						<div className="preview">
-							3
-						</div>
-					</li>
-				</ul>
-
+			<div className="waiting">
+				{/** This's only the info block  */}
+				<WaitingWayFC />
 			</div>
 		</>
 

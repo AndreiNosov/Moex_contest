@@ -1,5 +1,5 @@
 import React from "react";
-
+import ButtonFC from "../../../pages/Buttons";
 export default function OpenBankFC() {
 	return (
 
@@ -27,7 +27,8 @@ export default function OpenBankFC() {
 					</div>
 				</div>
 				<div>
-					<button className="btn no-animation">Подписать заявление</button>
+					<ButtonFC title="Подписать заявление" />
+
 					<p>
 						Нажимая «Подписать заявление», вы подтверждаете согласие с <a href="#">условиями обслуживания</a>
 					</p>
