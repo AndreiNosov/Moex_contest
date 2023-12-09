@@ -9,7 +9,11 @@ import reports from '../img/icon_reports.svg';
 import note from '../img/note.svg'
 import icon_withdraw_money from '../img/icon_withdraw_money.svg';
 
-
+/**
+ * Брокерский счёт
+ * src\components\main\broker_bank\calculated\Calculation.js
+ * @returns 
+ */
 export default function CalculationFC() {
 	return (
 

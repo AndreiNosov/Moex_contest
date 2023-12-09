@@ -96,6 +96,8 @@ export default function MainFC() {
 				{/**src\pages\Carousel.js
 				 * "Брокерский счет" страница
 				*/}
+
+				{/*src\components\main\broker_bank\calculated\Calculation.js*/}
 				<CalculationFC />
 			</section> 
 
