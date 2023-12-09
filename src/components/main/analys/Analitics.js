@@ -6,6 +6,7 @@ export default function AnalyticsFC() {
 	return (
 		<div className=" flex grow">
 			<AnalysisFC />
+
 			<LastInvestFC />
 		</div>
 	)

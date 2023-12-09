@@ -2,7 +2,7 @@ import React from "react";
 import StatisticListFC from './StatisticList.js';
 import StatisticMenuFC from './StatisticMenu.js';
 import graph from '../img/graph_statis.png';
-import HeadingFC from "../../Heading.js";
+import HeadingFC from "../../../pages/Heading.js";
 
 
 export default function AnalysisFC() {

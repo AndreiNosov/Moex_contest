@@ -1,9 +1,9 @@
 import React from "react";
-import HeadingFC from "../../Heading.js";
+import HeadingFC from "../../../pages/Heading.js";
 import StrategyTypyFC from "./StrategyTypeList.js";
 import UpLoadFileFC from "./StartegyUpLoad.js";
-import InfoBlockBullFC from "./InfoBlockBulls.js";
-
+import InfoBlockBullFC from "../../../pages/InfoBlockBulls.js";
+import ButtonFC from "../../../pages/Buttons.js";
 import SelectFC from "../../SelectMenu.js";
 
 export default function BrokerPageFC() {
@@ -25,7 +25,7 @@ export default function BrokerPageFC() {
 
 			{ /** "InfoBlockBulls.js" Вкладка "Создать бота" 
 			 * 
-			 * Files: < src\components\main\broker_strategy_type\img >
+			 * Files: < src\pic >
 			 * - bears.svg
 			 * - drakon.svg
 			 * - bull.png
@@ -33,14 +33,7 @@ export default function BrokerPageFC() {
 			*/}
 
 			<InfoBlockBullFC />
-			<div className="button" >
-
-				<span>Назад</span>
-				<button className="btn btn-wide">Продолжить</button>
-			</div>
-
-
-
+			<ButtonFC title="Продолжить" />
 			{ /** !! ниже код для вкладки "Самостоятельно" - загрузка файла
 			 * См. "UpLoadFileFC" -> "StartegyUpLoad.js"
 

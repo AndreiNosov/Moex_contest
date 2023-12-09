@@ -1,5 +1,5 @@
 import React from "react";
-import HeadingFC from "../../Heading.js";
+import HeadingFC from "../../../pages/Heading.js";
 import RowFC from './Row.js';
 
 import black from './img/black.svg';
@@ -35,8 +35,9 @@ export default function LastInvestFC() {
 						<th>Динамика</th>
 					</tr>
 					</thead>
+					<tbody>
 					<RowFC invest={dataInvest} />
-
+					</tbody>
 				</table>
 			</div>
 		</section>

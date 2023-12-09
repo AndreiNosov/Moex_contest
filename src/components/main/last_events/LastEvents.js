@@ -1,5 +1,5 @@
 import React from "react";
-import HeadingFC from '../../Heading.js';
+import HeadingFC from "../../../pages/Heading.js";
 import RowEventsFC from './EventsRows.js';
 
 import black from '../last_invest/img/black.svg';
@@ -24,18 +24,21 @@ export default function LastEventsFC() {
 	]
 	return (
 		<>
-			<HeadingFC title="Последние события" />
+
 			<div className="last_events  pl-10 ">
 				<table className=" table_last_invest w-full">
+					<thead>
 					<tr >
 						<th >Дата и время</th>
 						<th>События</th>
 						<th></th>
 						<th>Количество</th>
 						<th>Сумма</th>
-					</tr>
+						</tr>
+					</thead>
+					<tbody>
 					<RowEventsFC events={dataEvents} />
-
+					</tbody>
 				</table>
 			</div>
 		</>

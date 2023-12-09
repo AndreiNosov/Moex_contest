@@ -2,11 +2,14 @@ import React from 'react';
 // import './app.css';
 import HeaderFC from './components/Header.js';
 import SidebarFC from './components/aside/Sidebar.js';
-import MainFC from './components/main/Main.js'
+import MainFC from './components/main/Main.js';
 import FooterFC from './components/footer/footer.js';
 import ModelFC from './components/modal_window/Modal.js';
 
-const App = (props) => {
+const App = () => {
+
+
+
 	return (
 		<>
 			<HeaderFC /> 
