@@ -175,6 +175,9 @@ margin: 0 auto;
 .case_preview.bot {
 	background: no-repeat center url('./pic/bot.png');
 }
+.bot div.button span {
+	display: none;
+}
 
 .broker>div:last-of-type {
 	padding-bottom: 20px;
