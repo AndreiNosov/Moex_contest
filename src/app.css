@@ -135,7 +135,7 @@ margin: 0 auto;
 .counter_money__today span:after,
 .case_counter::after,
 .total_money span::after {
-	content: '₽';
+	content: '';
 	display: inline-block;
 	position: absolute;
 	right: 0;
