@@ -70,4 +70,3 @@ root
 ## Команды
 - Для запуска команда `yarn dev` | `npm dev`
 - Для сборки `yarn build` | `npm build`
-
