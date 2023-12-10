@@ -9,6 +9,9 @@ import {
 	createBrowserRouter,
 	RouterProvider,
 } from "react-router-dom";
+import OpenBankFC from "./components/main/broker_bank/OpenBank";
+import CalculationFC from "./components/main/broker_bank/calculated/Calculation";
+import BrokerPageFC from "./components/main/broker_strategy_type/StrategyPage";
 
 const router = createBrowserRouter([
 	{
@@ -20,7 +23,21 @@ const router = createBrowserRouter([
 				element: <>
 					<SidebarFC />
 					<MainFC />
-				</>
+				</>,
+				children: [
+					{
+						path: "",
+						element: <CalculationFC />
+					},
+					{
+						path: "create-account",
+						element: <OpenBankFC/>
+					},
+					{
+						path: "strategy",
+						element: <BrokerPageFC/>
+					}
+				]
 			},
 			{ path: "/catalog" },
 			{ path: "/analytics" },

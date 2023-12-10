@@ -6,6 +6,7 @@ import OpenBankFC from "./broker_bank/OpenBank.js";
 import LastInvestFC from './last_invest/Investment.js';
 import BrokerPageFC from './broker_strategy_type/StrategyPage.js';
 import CalculationFC from "./broker_bank/calculated/Calculation.js";
+import {Outlet} from "react-router-dom";
 
 export default function MainFC() {
 	return (
@@ -33,9 +34,9 @@ export default function MainFC() {
 				- Расскоментировать "	<ModelFC />" строку
 
 
-				
+
 				- "Самостоятельно" вкладка для ЗАГРУЗКИ файла
-					Читать ниже + 
+					Читать ниже +
 					"StrategyPage.js" - расскоментиироваро код в файле .
 
 
@@ -71,7 +72,7 @@ export default function MainFC() {
 
 
 			{/* Окно "Модальное"
-				Страницв выбрать 
+				Страницв выбрать
 				"Выберите тип стратегии" - bg-image - событие отпускаем клик - при открытом выподающем меню
 				  стрелка возвращется в баpовое положение
 
@@ -88,6 +89,7 @@ export default function MainFC() {
 			*/}
 
 			<section className="events rounded-2xl bg-white rounded-2xl min-h-[476px] grow pt-6">
+				<Outlet/>
 				{/* <ModelFC /> */}
 				{/* <BrokerPageFC /> */} {/** - "Выберите тип стратегии" вкладка "Через брокера" */}
 				{/**"StrategyPage.js" - расскоментиироваро код в файле . */}
@@ -98,9 +100,8 @@ export default function MainFC() {
 				*/}
 
 				{/*src\components\main\broker_bank\calculated\Calculation.js*/}
-				<CalculationFC />
-			</section> 
+			</section>
 
 		</main>
 	)
-} 
+}

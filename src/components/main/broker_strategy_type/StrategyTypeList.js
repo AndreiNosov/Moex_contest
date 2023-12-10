@@ -3,25 +3,24 @@ import React from "react";
 import WaitingWayFC from "../../../pages/WaitingWay";
 
 
-export default function StrategyTypyFC() {
+export default function StrategyTypyFC(props) {
 
 	return (
-
 		<>
 			<div className="broker_strategy_menu">
 				<ul className="menu menu-vertical lg:menu-horizontal rounded-box">
 					<li>
-						<span>Создать робота</span>
+						<span onClick={() => { props.handleClick(1)}}>Создать робота</span>
 						<div className="preview">
 						</div>
 					</li>
-					<li className="active">
-						<span>Через брокера</span>
+					<li className="preview">
+						<span onClick={() => { props.handleClick(2)}}>Через брокера</span>
 						<div className="preview">
 						</div>
 					</li>
 					<li>
-						<span>Самостоятельно</span>
+						<span onClick={() => { props.handleClick(3)}}>Самостоятельно</span>
 						<div className="preview">
 						</div>
 					</li>
@@ -33,6 +32,5 @@ export default function StrategyTypyFC() {
 				<WaitingWayFC />
 			</div>
 		</>
-
 	)
 }
