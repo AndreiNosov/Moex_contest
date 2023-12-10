@@ -1,0 +1,3 @@
+moexalgo
+pandas
+etna[all]

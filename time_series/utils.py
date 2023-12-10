@@ -77,7 +77,6 @@ class Tradestats(StatsBase):
             self.dataframes[date], self.secs = super().get_stats(name=self.name,
                                                 date=date,
                                                 csv_filepath=csv_filepath)
-            # self.market.tradestats(**kwargs) if csv_filepath is None else self.__from_csv__(csv_filepath)
             
 
       def add_new_date(self, new_date, csv_filepath=None):
@@ -94,7 +93,6 @@ class OrderStats(StatsBase):
                    **kwargs) -> None:
             super().__init__(market_name, board_id)
             self.name = 'orderstats'
-            # self.dataframes = {}
             self.dataframes[date], self.secs = super().get_stats(name=self.name,
                                                 date=date,
                                                 csv_filepath=csv_filepath)
@@ -136,10 +134,6 @@ class CompanyStats:
 
 if __name__ == "__main__":
     
-      # tradestats = Tradestats('stocks', board_id=None, date=default_starttime)
-      # tradestats.add_new_date('2023-10-11')
-      # print(tradestats.dataframes)
-      # print(tradestats.secs)
 
       sber_stats = CompanyStats()
       stats_kwargs = dict(
@@ -149,23 +143,4 @@ if __name__ == "__main__":
       candles = sber_stats.get_tradestats(**stats_kwargs)
       print(candles)
 
-class EDA:
-      
-      def __init__(self, df: pd.DataFrame) -> None:
-            pass
 
-      def plot_column(self, column_name):
-            pass
-
-      
-
-
-class NewsParser:
-      pass
-
-
-class Strategy:
-      pass
-
-class AnomalyFinder:
-      pass

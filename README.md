@@ -1,6 +1,6 @@
 # Moex_contest
 
- # Trading Bot Platform
+ # utils
 
 Welcome to the Trading Bot Platform, a comprehensive repository for trading strategies, as well as the design, backend, and frontend for a service dedicated to selecting and writing trading bots.
 
