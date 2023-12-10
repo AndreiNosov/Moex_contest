@@ -1,3 +1,4 @@
 moexalgo
 pandas
 etna[all]
+scikit-learn
