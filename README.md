@@ -10,16 +10,16 @@ This repository is designed to provide a robust and efficient platform for trade
 
 ## Components
 
-### 1. Trading Strategies
+### 1. Trading Strategies (main branch)
 - This section of the repository houses a collection of proven and innovative trading strategies. Each strategy is thoroughly documented, including its rationale, implementation details, and historical performance where applicable. Traders can explore, analyze, and potentially incorporate these strategies into their bot development process.
 
-### 2. Bot Design
-- Here, you can find the design specifications and architecture for trading bots. This includes details about bot functionality, communication with exchange APIs, risk management, and performance monitoring. The design documentation is aimed at guiding developers in creating robust and efficient trading bots. https://clck.ru/36wCwq
+### 2. Bot Design (figma https://clck.ru/36wCwq)
+- Here, you can find the design specifications and architecture for trading bots. This includes details about bot functionality, communication with exchange APIs, risk management, and performance monitoring. The design documentation is aimed at guiding developers in creating robust and efficient trading bots. 
 
-### 3. Backend
+### 3. Backend (further work)
 - The backend component constitutes the core functionality of the trading bot platform. It includes services for accessing market data, executing trades, managing user accounts, and storing trading bot configurations. The backend is designed to be scalable, secure, and reliable, providing the necessary infrastructure for running trading bots in real-world trading environments.
 
-### 4. Frontend
+### 4. Frontend (web branch)
 - The frontend component offers a user interface for interacting with the platform. It allows users to browse and select trading strategies, customize and configure trading bots, monitor bot performance, and access comprehensive analytics. The frontend is designed for ease of use, providing a seamless experience for both novice and experienced traders.
 
 ## Getting Started
