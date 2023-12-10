@@ -9,10 +9,10 @@ export default function BankFC(prop) {
 			</div>
 
 			<div className=" ">
-				<span className="case_counter sum pr-2">200890,98</span>
+				<span className="case_counter sum pr-2">200890,98&nbsp;₽</span>
 			</div>
 
-			<div className="bank-total_sum maney counter_money"><span className="pr-2">+20,78</span></div>
+			<div className="bank-total_sum maney counter_money"><span className="pr-2">+20,78&nbsp;₽</span></div>
 			<div className="bank-total_statis percerntiles pr-2 counter_money__percerntiles"><span >20,8</span></div>
 		</div>
 	)
