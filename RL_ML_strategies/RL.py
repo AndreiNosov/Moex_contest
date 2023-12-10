@@ -2,8 +2,9 @@ import gym
 import tensorflow as tf
 from tensorflow.keras import layers
 import numpy as np
+import pandas as pd
+import time
 
-# Создание среды обучения (environment)
 class CustomTradingEnv(gym.Env):
     metadata = {'render.modes': ['human']}
     
@@ -11,9 +12,10 @@ class CustomTradingEnv(gym.Env):
         super(CustomTradingEnv, self).__init__()
         self.initial_capital = initial_capital
         self.data = data
-        self.action_space = gym.spaces.Discrete(3)  # Пример: 3 действия, например buy, sell, hold
+        self.action_space = gym.spaces.Discrete(3)  # Example: 3 actions, for instance buy, sell, hold
         self.observation_space = gym.spaces.Box(low=0, high=np.inf, shape=(len(data.columns),), dtype=np.float32)
         self.current_step = 0
+        self.tradestats = None
 
     def reset(self):
         self.current_balance = self.initial_capital
@@ -24,9 +26,9 @@ class CustomTradingEnv(gym.Env):
     def step(self, action):
         self.current_step += 1
         done = self.current_step >= len(self.data) - 1
-        reward = 0  # Необходимо реализовать логику вознаграждения на основе действий и данных
-        info = {}  # Дополнительная информация
-        # Реализовать логику выполнения действия и подсчета вознаграждения
+        reward = 0  # Implement reward logic based on actions and data
+        info = {}  # Additional information
+        # Implement action execution logic and reward calculation
         return self._next_observation(), reward, done, info
 
     def _next_observation(self):
@@ -37,7 +39,6 @@ class CustomTradingEnv(gym.Env):
         # Render the environment to the screen
         pass
 
-# Создание агента RL на основе нейронной сети
 class CustomAgent:
     def __init__(self, state_size, num_actions):
         self.model = self.create_model(state_size, num_actions)
@@ -76,4 +77,18 @@ class CustomAgent:
             loss = self.loss_function(tf.expand_dims(target, axis=0), action_values)
 
         grads = tape.gradient(loss, self.model.trainable_variables)
-        self.optimizer.apply_gradients(zip(grads, self.model.trainable_variables  
+        self.optimizer.apply_gradients(zip(grads, self.model.trainable_variables))
+
+# Download and store trade statistics
+dates = ['2023-11-20', '2023-11-21', '2023-11-22', '2023-11-23', '2023-11-24']
+tradestats = pd.DataFrame()
+for date in dates:
+    for cursor in range(25):
+        url = f'https://iss.moex.com/iss/datashop/algopack/eq/tradestats.csv?date={date}&start={cursor*1000}&iss.only=data'
+        df = pd.read_csv(url, sep=';', skiprows=2)
+        tradestats = pd.concat([tradestats, df])
+        if df.shape[0] < 1000:
+            break
+        time.sleep(0.5)
+
+tradestats.to_csv('tradestats.csv', index=None)
