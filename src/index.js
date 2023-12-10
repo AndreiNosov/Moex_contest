@@ -1,6 +1,9 @@
 import React, { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import App from './App.js';
+import MainFC from "./components/main/Main";
+import SidebarFC from "./components/aside/Sidebar";
+import './app.css';
 
 import {
 	createBrowserRouter,
@@ -11,13 +14,21 @@ const router = createBrowserRouter([
 	{
 		path: "/",
 		element: <App />,
+		children: [
+			{
+				path: "/",
+				element: <>
+					<SidebarFC />
+					<MainFC />
+				</>
+			},
+			{ path: "/catalog" },
+			{ path: "/analytics" },
+			{ path: "/news" }
+		]
 	},
 ]);
 
-
-// import './styles/style.css'
-import './app.css';
-//
 createRoot(document.getElementById('root')).render(
 	<RouterProvider router={router} />
 );

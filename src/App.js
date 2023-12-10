@@ -5,6 +5,8 @@ import SidebarFC from './components/aside/Sidebar.js';
 import MainFC from './components/main/Main.js';
 import FooterFC from './components/footer/footer.js';
 import ModelFC from './components/modal_window/Modal.js';
+import { Outlet } from "react-router-dom";
+
 
 const App = () => {
 
@@ -12,12 +14,10 @@ const App = () => {
 
 	return (
 		<>
-			<HeaderFC /> 
+			<HeaderFC />
 			{/* <ModelFC />  !! Модальное окно  "Покупка акций"  Раскомментировать*/}
 			<div className='content pt-6 flex broker_strategy_type'>
-				<SidebarFC />
-				<MainFC />
-				<FooterFC />
+				<Outlet/>
 			</div>
 		</>
 	);

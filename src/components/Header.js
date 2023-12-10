@@ -4,7 +4,7 @@ import MenuFC from "../pages/Menu";
 export default function HeaderFC() {
 
 	const refers = [
-		{ ind: 1, ref: "/briefcase", title: "Портфель" },
+		{ ind: 1, ref: "/", title: "Портфель" },
 		{ ind: 2, ref: "/catalog", title: "Каталог" },
 		{ ind: 3, ref: "/analytics", title: "Аналитика" },
 		{ ind: 4, ref: "/news", title: "Новости" }
